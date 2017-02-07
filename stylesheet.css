@@ -3,14 +3,44 @@ color: black;
 background-color:gray
 }
 
+.column-left{
+  display:inline-block;
+
+  float: left;
+  width: 30%;
+  border:solid;
+
+
+
+ }
+.column-right{
+  display:inline-block;
+  float: right;
+  width: 30%;
+  border:solid
+
+
+ }
+.column-center{
+  display: inline-block;
+  float:center;
+  margin-left:5%;
+  margin-right:2%;
+  width: 30%;
+  border:solid;
+
+ }
+
+
+
+/* Footer Style  */
 footer{
-  positon: absolute;
-  botom:0;
+  position: absolute;
+  bottom:0;
+
   width:100%;
   background-color:gray;
 }
-
-
 footer ul{
   list-style-type:none;
   margin: 0;
@@ -21,4 +51,7 @@ footer li{
   float:left;
   padding:8px;
   display:block;
+}
+footer a:link{
+  text-decoration: none;
 }
