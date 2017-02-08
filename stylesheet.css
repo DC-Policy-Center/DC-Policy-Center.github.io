@@ -2,48 +2,66 @@ h1 {
 color: black;
 background-color:gray
 }
+.links{
+margin-top: -30px;
+background-color:gray;
+ }
+.links ul{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.links li{
+  float:left;
+  padding:8px;
+  display:block;
+}
+.links a:link{
+  color:white;
+  text-decoration: none;
+}
+.links a:hover{
+  color:red;
+  text-decoration: none;
+}
 
+
+/* Main Column Style */
 .column-left{
   display:inline-block;
-
   float: left;
-  width: 30%;
-  border:solid;
-
-
+  width: 80%;
 
  }
 .column-right{
   display:inline-block;
   float: right;
-  width: 30%;
-  border:solid
-
-
+  width: 10%;
+  border:dashed
  }
-.column-center{
-  display: inline-block;
-  float:center;
-  margin-left:5%;
-  margin-right:2%;
-  width: 30%;
+
+
+/* Specific ID Style */
+#summary{
   border:solid;
-
- }
-
+}
 
 
 /* Footer Style  */
 footer{
   position: absolute;
   bottom:0;
-
   width:100%;
   background-color:gray;
 }
+
+footer p{
+  text-align:center;
+  padding-bottom: -1px;
+}
 footer ul{
   list-style-type:none;
-  margin: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -51,7 +69,15 @@ footer li{
   float:left;
   padding:8px;
   display:block;
+  float:center;
 }
 footer a:link{
+  color:white;
   text-decoration: none;
+  float:center;
+}
+footer a:hover{
+  color:red;
+  text-decoration: none;
+  float:center;
 }
