@@ -21,6 +21,10 @@ background-color:gray;
   color:white;
   text-decoration: none;
 }
+.links a:visited{
+  color:white;
+  text-decoration: none;
+}
 .links a:hover{
   color:red;
   text-decoration: none;
@@ -72,6 +76,11 @@ footer li{
   float:center;
 }
 footer a:link{
+  color:white;
+  text-decoration: none;
+  float:center;
+}
+footer a:visited{
   color:white;
   text-decoration: none;
   float:center;
