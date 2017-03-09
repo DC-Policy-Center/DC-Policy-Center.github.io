@@ -39,6 +39,15 @@ blockquote {
   color: #777777;
   font-style: italic;
 }
+
+table tr, th {
+  border:solid  .25px;
+  padding: 1px 20px 1px 10px;
+  text-align: center;
+}
+#table-header th {
+  background-color: #8BCFC5;
+}
 hr.small {
   max-width: 100px;
   margin: 15px auto;
