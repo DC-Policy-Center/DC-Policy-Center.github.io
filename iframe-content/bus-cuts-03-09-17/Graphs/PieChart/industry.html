@@ -1,0 +1,152 @@
+<html>
+	<head></head>
+	<style>
+		#source{
+			position: absolute;
+			top: 500px;
+			left: 100px;
+			font-size: 10px;
+		}
+
+		#logo{
+			position: absolute;
+			top: 500px;
+			left: 550px;
+			font-size: 10px;
+		}
+
+	</style>
+
+	<body>
+
+		<div id="pieChart"></div>
+		<div class="source" id="source">Source: US Census Bureau</div>	
+		<div class="logo" id="logo"><img src="https://s31.postimg.org/jcaqdyy57/dcpolicycentersmall.png"> </div>	
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+		<script src="d3pie.min.js"></script>
+		<script>
+			var pie = new d3pie("pieChart", {
+				"header": {
+					"title": {
+						"text": "Who is Affected by Proposed Metro Bus Cuts?",
+						"fontSize": 24,
+						"font": "ProximaNova"
+					},
+					"subtitle": {
+						"text": "Those Affected by Industry ( Total: 3713 +/- 254)",
+						"color": "#999999",
+						"fontSize": 12,
+						"font": "ProximaNova"
+					},
+					"titleSubtitlePadding": 9
+				},
+				"footer": {
+					"color": "#999999",
+					"fontSize": 10,
+					"font": "ProximaNova",
+					"location": "bottom-left"
+				},
+				"size": {
+					"canvasWidth": 700,
+					"pieInnerRadius": "70%",
+					"pieOuterRadius": "90%"
+				},
+				"data": {
+					"sortOrder": "value-desc",
+					"content": [
+						{
+							"label": "Office Business/Science/Arts",
+							"value": 2508,
+							"color": "#BECCDA"
+						},
+						{
+							"label": "Service",
+							"value": 300,
+							"color": "#D16D3B"
+						},
+						{
+							"label": "Sales",
+							"value": 652,
+							"color": "#527394"
+						},
+						{
+							"label": "Construction",
+							"value": 149,
+							"color": "#E2C886"
+						},
+						{
+							"label": "Production/Transportation",
+							"value": 101,
+							"color": "#B16379"
+						},
+						{
+							"label": "Military",
+							"value": 58,
+							"color": "#8BCFC5"
+						},
+						{
+							"label": "Agriculture",
+							"value": 4,
+							"color": "#6D7D8C"
+						},
+						{
+							"label": "Manufacturing",
+							"value": 56,
+							"color": "#8fe4fa"
+						},
+						{
+							"label": "Retail",
+							"value": 153,
+							"color": "#ff5300"
+						},
+						{
+							"label": "Food Service",
+							"value": 242,
+							"color": "#640000"
+						}
+					]
+				},
+				"labels": {
+					"outer": {
+						"pieDistance": 32
+					},
+					"inner": {
+						"hideWhenLessThanPercentage": 1
+					},
+					"mainLabel": {
+						"fontSize": 11
+					},
+					"percentage": {
+						"color": "#ffffff",
+						"decimalPlaces": 0
+					},
+					"value": {
+						"color": "#adadad",
+						"fontSize": 11
+					},
+					"lines": {
+						"enabled": true
+					},
+					"truncation": {
+						"enabled": true
+					}
+				},
+				"effects": {
+					"pullOutSegmentOnClick": {
+						"effect": "elastic",
+						"speed": 400,
+						"size": 8
+					}
+				},
+				"misc": {
+					"gradient": {
+						"enabled": true,
+						"percentage": 100
+					}
+				}
+			});
+		</script>
+
+	</body>
+</html>
