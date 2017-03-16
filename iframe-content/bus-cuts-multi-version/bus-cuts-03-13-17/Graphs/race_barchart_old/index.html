@@ -109,7 +109,7 @@
 			.attr("text-anchor", "middle")  
 			.style("font-size", "16px")
 			.style("font-weight", "bold")
-			.text("compared with all bus riders, by race");
+			.text("compared with all bus riders, by median household income");
 
 
 
@@ -140,7 +140,7 @@
 		.attr("font-size", 10)
 		.attr("text-anchor", "end")
 		.selectAll("g")
-		.data(keys.slice())
+		.data(keys.slice().reverse())
 		.enter().append("g")
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
