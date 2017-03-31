@@ -6,8 +6,7 @@ description: Streamlining the Data Blog
 
 ## Welcome to another page
 
-_yay_
-
-[back](./)
+We are switching to a Jekyll based blogging system on our DC:DB.
+There are still a few bugs so stick with us! 
 
 [iframes](../iframe-content/iframe-content-base-directory)
