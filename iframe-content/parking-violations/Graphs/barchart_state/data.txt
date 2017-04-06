@@ -1,0 +1,5 @@
+state	Parking Violations	Residents that Work in D.C.
+Maryland	36	41
+District of Columbia	29	29
+Virginia	22	27
+Other States	13	3
