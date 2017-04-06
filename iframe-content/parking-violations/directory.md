@@ -14,6 +14,6 @@ description:
 | - | barchart street Figure|[https://dc-policy-center.github.io/iframe-content/parking-violations/Graphs/barchart_street/index.html ](https://dc-policy-center.github.io/iframe-content/parking-violations/Graphs/barchart_violation/index.html )|
 | - | barchart violation Figure|[https://dc-policy-center.github.io/iframe-content/parking-violations/Graphs/barchart_violation/index.html](https://dc-policy-center.github.io/iframe-content/parking-violations/Graphs/barchart_street/index.html )|
 | - | line Figure|[https://dc-policy-center.github.io/iframe-content/parking-violations/Graphs/line/index.html](https://dc-policy-center.github.io/iframe-content/parking-violations/Graphs/line/index.html )|
-| - | Likelyhood Map Figure|[https://dc-policy-center.github.io/iframe-content/parking-violations/Map/likelyhood/index.html](https://dc-policy-center.github.io/iframe-content/parking-violations/Map/likelyhood/index.html )|
+| - | Likelyhood Map Figure|[https://dc-policy-center.github.io/iframe-content/parking-violations/Maps/likelyhood/index.html](https://dc-policy-center.github.io/iframe-content/parking-violations/Maps/likelyhood/index.html )|
 
 [iframes](../iframe-content/iframe-content-base-directory)
