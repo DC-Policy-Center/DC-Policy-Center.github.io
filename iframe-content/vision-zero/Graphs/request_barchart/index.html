@@ -63,18 +63,13 @@
 			.attr("height", function(d) { return height - y(d.value); })
 			.attr("fill", function(d) { return z(d.key); });
 
-		rectG.append("text")
-			.text(function(d){return d.value;})
-			.attr("x", function(d) { return x1(d.key) + (x1.bandwidth()/2); })
-			.attr("y", function(d) { return y(d.value) - 5; })
-			.style("text-anchor", "middle")
-			.style("font-size", "8");
+
 
 		g.append("g")
 			.attr("class", "axis")
 			.attr("transform", "translate(0," + height + ")")
 			.call(d3.axisBottom(x0))
-			.selectAll("text")	
+			.selectAll("text")
 			.style("text-anchor", "end")
 			.attr("dx", "-1em")
 			.attr("dy", "-0.5em")
@@ -101,24 +96,24 @@
 			.text("Reason for Safety Request");
 
 		svg.append("text")
-			.attr("x", 50)             
+			.attr("x", 50)
 			.attr("y", -5 + (margin.top / 2))
-			.attr("text-anchor", "start")  
+			.attr("text-anchor", "start")
 			.style("font-size", "16px")
 			.style("font-weight", "bold")
 			.text("Speeding is the largest saftey concern of those submitting requests");
 
 		svg.append("text")
-			.attr("x", 50)             
+			.attr("x", 50)
 			.attr("y", 15 + (margin.top / 2))
-			.attr("text-anchor", "start")  
+			.attr("text-anchor", "start")
 			.style("font-size", "13px")
 			.style("font-weight", "bold")
 			.text("Top 10 safety request types, June 2015 to March 2017");
 
 
 
-		// add logo 
+		// add logo
 
 		var imgs = svg
 		.append("svg:image")
