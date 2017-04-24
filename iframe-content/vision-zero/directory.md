@@ -11,7 +11,7 @@ description:
 |-|-|-|
 | Graphs | Neighborhood barchart Figure|[https://dc-policy-center.github.io/iframe-content/vision-zero/Graphs/neighborhood_barchart/index.html](https://dc-policy-center.github.io/iframe-content/vision-zero/Graphs/neighborhood_barchart/index.html)|
 | Graphs | Requests barchart |[https://dc-policy-center.github.io/iframe-content/vision-zero/Graphs/request_barchart/index.html](https://dc-policy-center.github.io/iframe-content/vision-zero/Graphs/request_barchart/index.html)|
-| Graphs | Word barchart |[https://dc-policy-center.github.io/iframe-content/vision-zero/Graphs/world_barchart/index.html](https://dc-policy-center.github.io/iframe-content/vision-zero/Graphs/world_barchart/index.html)|
+| Graphs | Word barchart |[https://dc-policy-center.github.io/iframe-content/vision-zero/Graphs/word_barchart/index.html](https://dc-policy-center.github.io/iframe-content/vision-zero/Graphs/word_barchart/index.html)|
 | Maps | Expectation map|[https://dc-policy-center.github.io/iframe-content/vision-zero/Maps/gwr/index.html](https://dc-policy-center.github.io/iframe-content/vision-zero/Maps/gwr/index.html)|
 
 
