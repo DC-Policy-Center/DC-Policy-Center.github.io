@@ -8,10 +8,10 @@
   <link rel="stylesheet" type="text/css" href="css/tip.css" />
   <link rel="stylesheet" type="text/css" href="css/legend.css" />
   <link rel="stylesheet" type="text/css" href="css/c3.min.css" />
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="http://d3js.org/topojson.v1.min.js"></script>
-  <script src="http://d3js.org/queue.v1.min.js"></script>
-  <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="https://d3js.org/queue.v1.min.js"></script>
+  <script src="https://d3js.org/d3.geo.projection.v0.min.js"></script>
   <script src="http://underscorejs.org/underscore-min.js"></script>
   <script src="js/d3.geo.zoom.js"></script>
   <script src="js/map.tip.js"></script>
@@ -64,7 +64,7 @@
       .scale(1000)
       .translate([width / 2, height / 2]);
     var path = d3.geo.path().projection(projection);
-	    
+
     //Map container
     var svg = d3.select("#map")
       .append("svg")
@@ -73,15 +73,15 @@
       .attr("height", height)
       .on("click", hideTip)
       .append("g");
-      
+
     svg.call(d3.behavior.zoom()
       .scaleExtent([1, 40])
       .on("zoom", onZoom));
-	
+
     //Vector group
     var vectors = svg.append("g")
       .attr("class", "polygon");
-      
+
     //Overlay
     vectors.append("rect")
       .attr("class", "overlay")
@@ -111,7 +111,7 @@
     //Load map when downloaded
     function ready(error, json0, json1, data) {
       if (error) return console.error(error);
-	  
+
       //Polygon features
       var object0 = json0;
       var object1 = json1;
@@ -143,10 +143,10 @@
         .attr("class", function (d) { return d.properties.d3Css; });
 
 
-    
+
       _data = data;
 
-      
+
       var legend = d3.legend(svg)
         .csv("data/legend.csv")
         .position(3)
@@ -160,30 +160,30 @@
       tip.html(info(obj))
         .show();
 
-        
-      
+
+
       d3.event.stopPropagation();
     }
-    
+
     // Get the tool tip data from the template
     function info(obj) {
       var template = document.getElementById("template").innerHTML;
-      
+
       Object.keys(obj).forEach(function(key){
         template = template.replace("{" + key + "}", obj[key]);
       });
-    
+
       return template;
     }
-    
+
     // Hide the tooltip
     function hideTip() {
       tip.hide();
     }
 
 
-  
-    // Zoom/pan 
+
+    // Zoom/pan
     function onZoom() {
       hideTip();
       vectors.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
@@ -191,7 +191,7 @@
       vector1.style("stroke-width", 2.0 / d3.event.scale);
 
     }
-  
+
  </script>
 </body>
 </html>
