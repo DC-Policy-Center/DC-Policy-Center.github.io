@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {'packages':['line', 'corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+var button = document.getElementById('change-chart');
+var chartDiv = document.getElementById('chart_div');
+
+var data = new google.visualization.DataTable();
+data.addColumn('string','Year');
+data.addColumn('number', "All other metro area jurisdictions");
+data.addColumn('number', "District of Columbia");
+
+data.addRows([
+  ['2010',  6766,  1428],
+  ['2011',  15910,  7069],
+  ['2012',  -780,  6305],
+  ['2013',  -2195,  6022],
+  ['2014',  -27053,  691],
+  ['2015',  -32302,  2885],
+  ['2016',  -33286,  2276],
+
+]);
+var materialOptions = {
+  chart:{
+    title: 'Net domestic migration',
+  },
+
+  axes: {
+    // Adds labels to each axis; they don't have to match the axis names.
+    y: {
+      0: {label: 'Net domestic migration'}
+    }
+  },
+
+  legend: {
+    position: 'top'},
+  colors:['#527394','#E2C886'],
+    width: 900,
+    height: 500
+};
+
+
+function drawMaterialChart() {
+  var materialChart = new google.charts.Line(chartDiv);
+  materialChart.draw(data, materialOptions);
+}
+
+
+
+drawMaterialChart();
+
+}
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="chart_div"></div>
+
+  </body>
+</html>

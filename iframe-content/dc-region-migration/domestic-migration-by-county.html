@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+<style>
+button {
+    background-color: #BECCDA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float:right;
+    padding: 10px 10px 10px 10px;
+    border: 10px;
+    margin: -10px -10px -10px -10px;
+
+}
+button:hover{color: #E8272C;}
+
+</style>
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+  var button = document.getElementById('change-chart');
+  var chartDiv = document.getElementById('chart_div');
+// Data
+  // Data for total migration
+  var data_total = new google.visualization.arrayToDataTable([
+  ['County','County Migration',{role:'style'}],
+  ['Loudoun County, VA',4902,'#BECCDA'],
+  ['District of Columbia, DC',2276,'#527394'],
+  ['Stafford County, VA',1134,'#BECCDA'],
+  ['Charles County, MD',796,'#BECCDA'],
+  ['Spotsylvania County, VA',457,'#BECCDA'],
+  ['Culpeper County, VA',452,'#BECCDA'],
+  ['Frederick County, MD',448,'#BECCDA'],
+  ['Calvert County, MD',304,'#BECCDA'],
+  ['Fauquier County, VA',184,'#BECCDA'],
+  ['Clarke County, VA',77,'#BECCDA'],
+  ['Fredricksburg, VA',38,'#BECCDA'],
+  ['Jefferson County, WV',-3,'#D16D3B'],
+  ['Rappahannock County, VA',-18,'#D16D3B'],
+  ['Manassas Park, VA',-64,'#D16D3B'],
+  ['Warren County, VA',-187,'#D16D3B'],
+  ['Fairfax City, VA',-224,'#D16D3B'],
+  ['Falls Church, VA',-297,'#D16D3B'],
+  ['Manassas, VA',-1001,'#D16D3B'],
+  ['Alexandria, VA',-1661,'#D16D3B'],
+  ['Prince William County, VA',-1804,'#D16D3B'],
+  ['Arlington County, VA',-2082,'#D16D3B'],
+  ['Montgomery County, MD',-8240,'#D16D3B'],
+  ["Prince George's County, MD",-8677,'#D16D3B'],
+  ['Fairfax County, VA',-17820,'#D16D3B'],
+  ]);
+  // Data for per capita (10,000)
+  var data_per_capita = new google.visualization.arrayToDataTable([
+  ['County','County Migration',{role:'style'}],
+  ["Loudoun County, VA",127.0129163,'#BECCDA'],
+  ["District of Columbia, DC",33.41309805,'#527394'],
+  ["Stafford County, VA",78.55307181,'#BECCDA'],
+  ["Charles County, MD",50.47398624,'#BECCDA'],
+  ["Spotsylvania County, VA",34.6185895,'#BECCDA'],
+  ["Culpeper County, VA",90.25018469,'#BECCDA'],
+  ["Frederick County, MD",18.09435723,'#BECCDA'],
+  ["Calvert County, MD",33.3147034,'#BECCDA'],
+  ["Fauquier County, VA",26.64002664,'#BECCDA'],
+  ["Clarke County, VA",53.56894393,'#BECCDA'],
+  ["Fredricksburg, VA",13.4289854,'#BECCDA'],
+  ["Jefferson County, WV",-0.53221686,'#D16D3B'],
+  ["Rappahannock County, VA",-24.36383324,'#D16D3B'],
+  ["Manassas Park, VA",-40.21363494,'#D16D3B'],
+  ["Warren County, VA",-47.75890691,'#D16D3B'],
+  ["Fairfax City, VA",-92.69988413,'#D16D3B'],
+  ["Falls Church, VA",-211.9309262,'#D16D3B'],
+  ["Manassas, VA",-241.3036666,'#D16D3B'],
+  ["Alexandria, VA",-106.6041974,'#D16D3B'],
+  ["Prince William County, VA",-39.63006085,'#D16D3B'],
+  ["Arlington County, VA",-90.50206477,'#D16D3B'],
+  ["Montgomery County, MD",-78.93756173,'#D16D3B'],
+  ["Prince George's County, MD",-95.55651732,'#D16D3B'],
+  ["Fairfax County, VA",-156.5008449,'#D16D3B'],
+  ]);
+
+      var totalOptions = {
+        title: 'Net domestic migration by county',
+        chartArea: {width: '50%', height:'80%'},
+        hAxis: {
+          title: 'Total Population',
+          viewWindow: {
+            min: -20000,
+            max: 20000
+          }
+
+        },
+        vAxis: {
+          title: 'Jurisdiction',
+        },
+        animation:{
+        duration: 1000,
+        easing: 'out',
+        startup:true
+        },
+        legend:{position:'none'}
+
+      };
+
+      var perCapitaOptions = {
+        title: 'Domestic migration by county per 10,000 people',
+        chartArea: {width: '50%', height:'80%'},
+        hAxis: {
+          title: 'Total Population per 10,000 people',
+        },
+        vAxis: {
+          title: 'Jurisdiction'
+        },
+        animation:{
+        duration: 1000,
+        easing: 'out',
+        startup:true
+        },
+        legend:{position:'none'},
+      };
+
+
+      function drawTotal(){
+        var totalChart = new google.visualization.BarChart(chartDiv);
+        totalChart.draw(data_total, google.charts.Bar.convertOptions(totalOptions));
+        button.innerText = 'Change to per capita';
+        button.onclick = drawPerCapita;
+      }
+
+      function drawPerCapita(){
+        var perCapitaChart = new google.visualization.BarChart(chartDiv);
+        perCapitaChart.draw(data_per_capita, google.charts.Bar.convertOptions(perCapitaOptions));
+        button.innerText = 'Change to totals';
+        button.onclick = drawTotal;
+      }
+
+      drawTotal();
+    }
+  </script>
+
+</head>
+
+<body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <button id='change-chart'>Change to per capita</button>
+<br></br>
+<div id="chart_div" style='height:1000px'></div>
+</body>
