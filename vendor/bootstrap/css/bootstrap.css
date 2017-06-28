@@ -3013,8 +3013,11 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
+
+/* Button CSS */
 .btn {
   display: inline-block;
+
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
@@ -3052,7 +3055,7 @@ select[multiple].input-lg {
 .btn:active,
 .btn.active {
   background-image: none;
-  outline: 0;
+  outline: 10;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
@@ -3084,6 +3087,7 @@ fieldset[disabled] a.btn {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
+
 }
 .btn-default:active,
 .btn-default.active,
@@ -3091,6 +3095,7 @@ fieldset[disabled] a.btn {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
+
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -3148,6 +3153,9 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #286090;
   border-color: #204d74;
+  position:absolute;
+  display:block;
+  overflow:hidden;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3161,6 +3169,7 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #204d74;
   border-color: #122b40;
+
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3205,6 +3214,7 @@ fieldset[disabled] .btn-primary.focus {
   color: #fff;
   background-color: #449d44;
   border-color: #398439;
+
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
