@@ -9,4 +9,6 @@ description:
 
 |Folder|Figure|Link to figure|
 |-|-|-|
-| - | DC vs All migration line Figure|[https://dc-policy-center.github.io/iframe-content/dc-region-migration/dc-vs-all-migration.html](https://dc-policy-center.github.io/iframe-content/dc-region-migration/dc-vs-all-migration.html)|
+| - | Nightlife history map|[https://dc-policy-center.github.io/iframe-content/nightlife-histroy-map.html](https://dc-policy-center.github.io/iframe-content/nightlife-histroy-map.html)|
+| - | Nightlife history neighborhood figure |[https://dc-policy-center.github.io/iframe-content/nightlife-histroy-neighborhood.html](https://dc-policy-center.github.io/iframe-content/nightlife-histroy-neighborhood.html)|
+| - | Nightlife history full sheet|[https://dc-policy-center.github.io/iframe-content/nightlifeHistory.html](https://dc-policy-center.github.io/iframe-content/nightlifeHistory.html)|
