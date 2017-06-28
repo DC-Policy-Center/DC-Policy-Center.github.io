@@ -4,35 +4,6 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
   <link href='./nightlifeHistory.css' rel='stylesheet' />
 </head>
-	<div class='content'>
-		<p class="graph-title">Mapping D.C. Nightlife, 2008-2016</p>
-		<p class="graph-subtitle">Liquor license locations for bars, restaurants, and clubs</p>
-		<div id='map'>
-	  	<div id='console'>
-	    	<div class='session'>
-
-	    	<div class='session' id='sliderbar'>
-		      <p>Nightlife in: <label id='year'>2008</label></p>
-		      <input id='slider' class='row' type='range' min='2008' max='2016' step='1' value='2008' />
-		    </div>
-
-		    <br>
-
-		    <p>First year of liquor license</p>
-		    <div class='row colors'></div>
-		    <div class='row labels'>
-		      <div class='yrScale' style = 'margin-right: 25px;'>pre-2009</div>
-		      <div class='yrScale' style = 'margin-right: 45px;'>2012</div>
-		      <div class='yrScale'>2016</div>
-		      </div>
-		    </div>
-
-		  </div>
-		</div>
-		<p class="graph-subtitle">Source: ABRA, DataLensDC</p>
-	</div>
-
-
  	<div class='content'>
 		<p class="graph-title">Gentrifying Neighborhoods See Substantial Nightlife Growth</p>
 		<p class="graph-subtitle">Liquor licenses per neighborhood, 2008 and 2016 (hover for neighborhood counts)</p>
@@ -43,7 +14,4 @@
 
 	<hr id='end-line'>
     <p class='content'><b>Technical notes:</b> Data was obtained from the Alcoholic Beverage Regulation Administration via FOIA. Years shown above refer to specific reporting months: December 2008, December 2009, November 2010, October 2011, December 2012, August 2013, August 2014, July 2015, and August 2016. Neighborhoods are defined by D.C. Office of Planning's Neighborhood Clusters. You can find complete code and data for this post<a class='link' target="_blank" href="https://github.com/katerabinowitz"> on my github page.</a></p>
-    <br><br>
-
-    <script src="./nightlifeHistoryMap.js"></script>
     <script src="./nightlifeHistoryHood.js"></script>
