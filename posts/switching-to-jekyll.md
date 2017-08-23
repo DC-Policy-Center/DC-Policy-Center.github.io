@@ -8,5 +8,3 @@ description: Streamlining the Data Blog
 
 We are switching to a Jekyll based blogging system on our DC:DB.
 There are still a few bugs so stick with us!
-
-[iframes](../iframe-content/iframe-content-base-directory)
