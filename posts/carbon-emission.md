@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Greenhouse gas emmissions in D.C.
+title: Greenhouse gas emissions in D.C.
 description: Using R and Python to map CO<sub>2</sub> in th District
 author: Randy Smith
 date: 2017-08-23
