@@ -6,3 +6,13 @@ description: An API Wrapper for the DC LIMS
 The [D.C. LIMS](http://lims.dccouncil.us/) (Legislation Information Management System) has a pretty nice and simple [API the public](http://lims.dccouncil.us/api).
 It is simple enough to use without a wrapper but sometimes it is just easier to cut some of the process down, like request building and sending.
 At the D.C. Policy Center we regularly pull, process, and analyze the proposed and evaluated pieces of legislation that go through our cities Council.  
+
+
+
+---- use this for all posts in an MD
+{% for post in site.posts %}
+<div class="post-preview">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>
+</div>
+{% endfor %}
