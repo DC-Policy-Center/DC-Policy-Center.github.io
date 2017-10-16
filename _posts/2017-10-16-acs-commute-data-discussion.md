@@ -24,7 +24,7 @@ Code used to produced these charts can be found [below](https://github.com/sr-dc
 Discussion of Data
 ------------------
 
-For tables B08007 (Sex of Workers by Place of Work--State and County Level), B08130 (Means of Transportation to Work by Place of Work -- State and County Level), B08301 (Means of Transportation to Work), B08302 (Time Leaving Home to Go to Work), and B08134 (Means of Transportation to Work by Travel Time to Work), the [tidycensus](https://walkerke.github.io/tidycensus/articles/basic-usage.html) R package was used to download the ACS data. These tables required little cleaning because `tidycensus` already produces them in a tidy format. An example of this code can be found [below](https://github.com/sr-dc-policy-center/acs-commute/blob/master/Margin_of_Error_post.md#b08302-time-leaving-for-work) for Table B08302. Full code can be found [insert place where I eventually put this file].
+For tables B08007 (Sex of Workers by Place of Work--State and County Level), B08130 (Means of Transportation to Work by Place of Work -- State and County Level), B08301 (Means of Transportation to Work), B08302 (Time Leaving Home to Go to Work), and B08134 (Means of Transportation to Work by Travel Time to Work), the [tidycensus](https://walkerke.github.io/tidycensus/articles/basic-usage.html) R package was used to download the ACS data. These tables required little cleaning because `tidycensus` already produces them in a tidy format. An example of this code can be found [below](https://github.com/sr-dc-policy-center/acs-commute/blob/master/Margin_of_Error_post.md#b08302-time-leaving-for-work) for Table B08302. Full code can be found [here(https://github.com/sr-dc-policy-center/acs-commute/blob/master/B08302%20-%20Time%20Leaving%20for%20Work.R)].
 
 Data was cleaned and reshaped using [tidyverse](https://www.tidyverse.org/) packages (`dplyr`, `purrr`, `forcats`). Data was explored and plotted using `ggplot2` and `plotly`. Charts made using `ggplot2` were edited in Adobe Illustrator.
 
@@ -145,5 +145,3 @@ B08302_varnames <- read.csv("B08302_varnames.csv") #read in variable labels
 #join variable names to the time leaving for work data frame
 time_leaving_for_work_df <- right_join(time_leaving_for_work_dmv, B08302_varnames)
 ```
-
-The full R code used for this analysis can be found on at [this location](https://github.com/sr-dc-policy-center/acs-commute/blob/master/B08302%20-%20Time%20Leaving%20for%20Work.R).
