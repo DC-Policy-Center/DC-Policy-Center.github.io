@@ -1,7 +1,7 @@
 ---
 layout: auto-post
-title: Handling the Margin of Error in ACS 1-year Estimates
-description: ACS Commute Data Discussion
+title:  A Discussion on ACS 1-year Estimate Commute Data
+description: An analysis of data and handling margin of error
 author: Simone Roy
 date: 2017-10-16
 permalink: /posts/acs-commute-data-discussion/
@@ -24,7 +24,7 @@ Code used to produced these charts can be found [below](https://github.com/sr-dc
 Discussion of Data
 ------------------
 
-For tables B08007 (Sex of Workers by Place of Work--State and County Level), B08130 (Means of Transportation to Work by Place of Work -- State and County Level), B08301 (Means of Transportation to Work), B08302 (Time Leaving Home to Go to Work), and B08134 (Means of Transportation to Work by Travel Time to Work), the [tidycensus](https://walkerke.github.io/tidycensus/articles/basic-usage.html) R package was used to download the ACS data. These tables required little cleaning because `tidycensus` already produces them in a tidy format. An example of this code can be found [below](https://github.com/sr-dc-policy-center/acs-commute/blob/master/Margin_of_Error_post.md#b08302-time-leaving-for-work) for Table B08302. Full code can be found [here(https://github.com/sr-dc-policy-center/acs-commute/blob/master/B08302%20-%20Time%20Leaving%20for%20Work.R)].
+For tables B08007 (Sex of Workers by Place of Work--State and County Level), B08130 (Means of Transportation to Work by Place of Work -- State and County Level), B08301 (Means of Transportation to Work), B08302 (Time Leaving Home to Go to Work), and B08134 (Means of Transportation to Work by Travel Time to Work), the [tidycensus](https://walkerke.github.io/tidycensus/articles/basic-usage.html) R package was used to download the ACS data. These tables required little cleaning because `tidycensus` already produces them in a tidy format. An example of this code can be found [below](https://github.com/sr-dc-policy-center/acs-commute/blob/master/Margin_of_Error_post.md#b08302-time-leaving-for-work) for Table B08302. Full code can be found [here](https://github.com/sr-dc-policy-center/acs-commute/blob/master/B08302%20-%20Time%20Leaving%20for%20Work.R).
 
 Data was cleaned and reshaped using [tidyverse](https://www.tidyverse.org/) packages (`dplyr`, `purrr`, `forcats`). Data was explored and plotted using `ggplot2` and `plotly`. Charts made using `ggplot2` were edited in Adobe Illustrator.
 
