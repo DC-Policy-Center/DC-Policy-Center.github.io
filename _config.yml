@@ -4,5 +4,6 @@ google_analytics: UA-92959608-2
 theme:
 gems:
   - jekyll-redirect-from
+  - jekyll-admin
 whitelist:
   - jekyll-redirect-from
