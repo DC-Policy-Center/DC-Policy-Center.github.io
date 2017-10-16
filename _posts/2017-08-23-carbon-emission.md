@@ -4,7 +4,6 @@ title: Greenhouse gas emissions in D.C.
 description: Using R and Python to map CO<sub>2</sub> in th District
 author: Randy Smith
 date: 2017-08-23
-
 permalink: /posts/carbon-emission
 ---
 **D.C.’s building energy benchmark inventory** is a comprehensive list containing CO<sub>2</sub> emissions of all private residential and commercial buildings 50,000 square feet and larger, and all public buildings 10,000 square feet and larger. While this means only a fraction of D.C.’s 161,000 buildings are being tracked, it still captures some of the largest potential emitters.
