@@ -1,7 +1,7 @@
 ---
 layout: auto-post
-title: ACS Commute Data Discussion
-description: Handling the Margin of Error
+title: Handling the Margin of Error in ACS 1-year Estimates
+description: ACS Commute Data Discussion
 author: Simone Roy
 date: 2017-10-16
 permalink: /posts/acs-commute-data-discussion/
@@ -145,3 +145,5 @@ B08302_varnames <- read.csv("B08302_varnames.csv") #read in variable labels
 #join variable names to the time leaving for work data frame
 time_leaving_for_work_df <- right_join(time_leaving_for_work_dmv, B08302_varnames)
 ```
+
+The full R code used for this analysis can be found on at [this location](https://github.com/sr-dc-policy-center/acs-commute/blob/master/B08302%20-%20Time%20Leaving%20for%20Work.R).
