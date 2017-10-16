@@ -2,6 +2,8 @@
 layout: post
 title: Switching to Jeykll
 description: Streamlining the Data Blog
+date: 2017-04-20
+permalink: /posts/switching-to-jekyll
 ---
 
 ## Welcome to another page

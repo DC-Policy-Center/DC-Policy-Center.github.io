@@ -4,6 +4,7 @@ title: Building the Heat Vulnerability Index
 description: Analysis from Urban Heat Island
 author: Randy Smith
 date: 2017-08-23
+permalink: /posts/urban-heat-island
 ---
 
 **Developing a Heat Vulnerability Index (HVI)** is a multistep process drawing on multiple data inputs. Using composites of social, economic, and health related demographics along with temperature and vegetation variability, influenced by several studies, I created a Heat Vulnerability Index (HVI) to locate populations that are at an increased risk of heat stroke or other heat-related illnesses. The HVI was used in my main piece about [Urban Heat Islands](https://www.dcpolicycenter.org/publications/urban-heat-islands/?utm_source=urban-heat-islands-data-blog&utm_medium=data-blog) in the District.
@@ -110,4 +111,4 @@ Combining the analysis into a final map produces a nice interactive carto.
 <iframe src="https://jennyminich.carto.com/builder/84ad5cdc-626c-11e7-94cc-0e98b61680bf/embed" width="100%" height="520" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 ### About the data
-Social and economic demographic data acquired from the [U.S. Census Bureau’s American Community Survey, 2015](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml). Health data acquired from the [Center for Disease Control, 2014](https://chronicdata.cdc.gov/health-area/500-cities). Imagery used to derive temperature and NDVI values acquired from NASA’s Landsat 8 satellite and downloaded from the USGS’s [Earth Explorer repository](https://earthexplorer.usgs.gov/). You can find complete code for the analysis and visuals on my [github page](https://github.com/smitty1788/DCPolicyCenter/tree/master/March%202017/Urban%20Heat%20Island). 
+Social and economic demographic data acquired from the [U.S. Census Bureau’s American Community Survey, 2015](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml). Health data acquired from the [Center for Disease Control, 2014](https://chronicdata.cdc.gov/health-area/500-cities). Imagery used to derive temperature and NDVI values acquired from NASA’s Landsat 8 satellite and downloaded from the USGS’s [Earth Explorer repository](https://earthexplorer.usgs.gov/). You can find complete code for the analysis and visuals on my [github page](https://github.com/smitty1788/DCPolicyCenter/tree/master/March%202017/Urban%20Heat%20Island).

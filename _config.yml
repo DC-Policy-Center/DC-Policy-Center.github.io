@@ -2,3 +2,7 @@ title: D.C. Policy Center Data Blog
 description: dcpolicycenter
 google_analytics: UA-92959608-2
 theme:
+gems:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from

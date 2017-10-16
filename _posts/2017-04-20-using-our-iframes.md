@@ -2,6 +2,8 @@
 layout: post
 title: Using our iframes
 description: Interactives, figures, and maps
+date: 2017-04-20
+permalink: /posts/using-our-iframes
 ---
 
 ## Website interactives
