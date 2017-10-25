@@ -4,12 +4,13 @@ title: D.C. Legislation Wrapper
 description: An API Wrapper for the DC LIMS
 ---
 
-For about six months now the D.C. Policy Center has automated the pulling of new legislation for analysis.  This is made simple through a combination of the convenient [API](http://lims.dccouncil.us/api) that is provided through  [D.C. LIMS](http://lims.dccouncil.us/) (Legislation Information Management System) and an internally written python wrapper.  
+For about six months now the D.C. Policy Center has automated the pulling of new legislation for analysis.  This is made simple through a combination of the convenient [API](http://lims.dccouncil.us/api) that is provided through  [D.C. LIMS](http://lims.dccouncil.us/) (Legislation Information Management System) and an internally written python wrapper. The code for this automation has been on our [GitHub](addgithub) for awhile now but we are excited to announce the first offial build for python is live on [PyPI](pypi) now.  This means you can install our D.C. LIMS wrapper library and use it yourself.  
 
 
 
 ## Definitions
 
+There are two concepts that I would like to address here, API and wrapper.  These are two, often related, concepts in the digital age that
 * API
 * Wrapper
 
