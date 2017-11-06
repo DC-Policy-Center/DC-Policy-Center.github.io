@@ -4,15 +4,19 @@ title: D.C. Legislation Wrapper
 description: An API Wrapper for the DC LIMS
 ---
 
-For about six months now the D.C. Policy Center has automated the pulling of new legislation for analysis.  This is made simple through a combination of the convenient [API](http://lims.dccouncil.us/api) that is provided through  [D.C. LIMS](http://lims.dccouncil.us/) (Legislation Information Management System) and an internally written python wrapper. The code for this automation has been on our [GitHub](addgithub) for awhile now but we are excited to announce the first offial build for python is live on [PyPI](pypi) now.  This means you can install our D.C. LIMS wrapper library and use it yourself.  
+For about six months now the D.C. Policy Center has automated the pulling of new legislation for analysis.  This is made simple through a combination of the convenient [API](http://lims.dccouncil.us/api) that is provided through  [D.C. LIMS](http://lims.dccouncil.us/) (Legislation Information Management System) and an internally written python wrapper. The code for this automation has been on our [GitHub](https://github.com/DC-Policy-Center/DC-LIMS) for awhile now but we are excited to announce the first offial build for python is live on [PyPI](https://pypi.python.org/pypi/dclims) now.  This means you can install our D.C. LIMS wrapper library and use it yourself.  
 
 
 
 ## Definitions
 
 There are two concepts that I would like to address here, API and wrapper.  These are two, often related, concepts in the digital age that
-* API
-* Wrapper
+* API: [Application Programming Interface](https://en.wikipedia.org/wiki/Application_programming_interface) is a systematically defined method to communicate between people and/or systems
+* API Wrapper: a library that uses an API but handles the communication in a more human friendly way
+
+Saying this another way, the API sends and recieves information and a wrapper makes it easier for a human to read and write the information.
+
+
 
 
 
