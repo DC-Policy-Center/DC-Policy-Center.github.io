@@ -189,49 +189,7 @@ function mouseout(d){
 d3.select(self.frameElement).style("height", "800px");
 </script>
 <p>Source: American Community Survey, 2009-2013 Estimates <img src="dc.pc.branding.rgb.png" style="height: 100%; width: 100%;" style="float:right"></p>
-<div>
-<style>
-body {font-family: "Lato", sans-serif;}
-button.accordion {
-    background-color: #fff;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 80%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
 
-button.accordion.active, button.accordion:hover {
-    background-color: #fff;
-}
-
-div.panel {
-    padding: 0 18px;
-    display: none;
-        width: 80%;
-				    font-size: 15px;
-    background-color: white;
-}
-</style>
-</head>
-<body>
-
-
-<button class="accordion">Click here for an explanation of geographic groupings</button>
-<div class="panel">
-  <p><ul><li><strong>Baltimore N/E Suburbs</strong> includes Carroll, Hartford, and Queen Anne's Counties.</li>
-    <li><strong>Baltimore S Suburbs</strong> includes Anne Arundel and Howard Counties.
-  <li><strong>D.C. Inner Suburbs</strong> includes the Cities of Alexandria, Fairfax, and Falls Church + Arlington,
-Fairfax County, Falls Church, Montgomery, and Prince George's Counties.</li>
-<li><strong>D.C. Outer Suburbs</strong> includes Cities of Manassas, Manassas Park, and Fredericksburg.
-Calvert, Charles, Clarke, Fauquier, Frederick, Loudoun, Jefferson,
-Rappahannock, Spotsylvania, Stafford, and Warren Counties.</li></ul></p>
-</div>
-<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -323,23 +281,7 @@ function closeNav() {
 </body>
 </html>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    }
-}
-</script>
-</div>
 
 
 </body>
