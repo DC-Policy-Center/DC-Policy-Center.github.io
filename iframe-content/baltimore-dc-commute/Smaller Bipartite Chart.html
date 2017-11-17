@@ -159,13 +159,13 @@ var bp=[ viz.bP()
 		.on("mouseout",mouseout);
 
 	g[i].selectAll(".mainBars").append("text").attr("class","label")
-		.attr("x",d=>(d.part=="primary"? -30: 50))
+		.attr("x",d=>(d.part=="primary"? -30: 30))
 		.attr("y",d=>+6)
 		.text(d=>d.key)
 		.attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
 
 	g[i].selectAll(".mainBars").append("text").attr("class","perc")
-		.attr("x",d=>(d.part=="primary"? -170: 220))
+		.attr("x",d=>(d.part=="primary"? -190: 190))
 		.attr("y",d=>+6)
 		.text(function(d){ return d3.format("0.0%")(d.percent)})
 		.attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
