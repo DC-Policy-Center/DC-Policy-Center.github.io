@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+text{
+	font-size:13px;
+}
+.mainBars rect{
+  shape-rendering: auto;
+  fill-opacity: 0;
+  stroke-width: 0.5px;
+  stroke: rgb(0, 0, 0);
+  stroke-opacity: 0;
+}
+.subBars{
+	shape-rendering:crispEdges;
+}
+.edges{
+	stroke:none;
+	fill-opacity:0.5;
+}
+.header{
+	text-anchor:middle;
+	font-size:16px;
+}
+line{
+	stroke:grey;
+}
+img {
+    position: relative;
+  /*top: 100; bottom:50; left: 600; right:800;*/
+		float:right;
+    margin: auto;
+		height: auto;
+    width: auto;
+    max-width: 108px;
+    max-height: 54px;
+}
+
+body { font: 13px Lato;}
+h1 { font: 24px Lato;}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+</style>
+<html>
+  <head>
+    <h1 style="font-family:Lato;">Commuting Flows in the Baltimore and D.C. Metropolitan Areas</h1>
+<p style="font-family:Lato;color:black;font-size:15px;"><strong>Tips for navigating this graphic:</strong></br>
+	Where workers live is on the left, and where workers work is on the right.</br>
+  Mouse over a jurisdiction on the left to see the breakdown of where residents of that jurisdiction work.</br>
+	Mouse over a jurisdiction on the right to see the breakdown of where workers in that jurisdiction live.</p>
+    </head>
+<body>
+<script src="https://DC-Policy-Center.github.io/iframe-content/baltimore-dc-commute/d3.min.js"></script>
+<script src="https://DC-Policy-Center.github.io/iframe-content/baltimore-dc-commute/viz.v1.js"></script>
+<script>
+
+var data=[
+  ["Baltimore City","Baltimore City",158909],
+    ["Baltimore County","Baltimore City",116891],
+    ["Baltimore: N/E Suburbs","Baltimore City",23821],
+    ["Baltimore: S Suburbs","Baltimore City",37379],
+    ["D.C.","Baltimore City",1248],
+    ["D.C.: Inner Suburbs","Baltimore City",11591],
+    ["D.C.: Outer Suburbs","Baltimore City",2603],
+    ["Baltimore City","Baltimore County",56606],
+    ["Baltimore County","Baltimore County",201173],
+    ["Baltimore: N/E Suburbs","Baltimore County",42012],
+    ["Baltimore: S Suburbs","Baltimore County",24456],
+    ["D.C.","Baltimore County",361],
+    ["D.C.: Inner Suburbs","Baltimore County",6034],
+    ["D.C.: Outer Suburbs","Baltimore County",1762],
+    ["Baltimore City","Baltimore: N/E Suburbs",3159],
+    ["Baltimore County","Baltimore: N/E Suburbs",13024],
+    ["Baltimore: N/E Suburbs","Baltimore: N/E Suburbs",118013],
+    ["Baltimore: S Suburbs","Baltimore: N/E Suburbs",3462],
+    ["D.C.","Baltimore: N/E Suburbs",22],
+    ["D.C.: Inner Suburbs","Baltimore: N/E Suburbs",1333],
+    ["D.C.: Outer Suburbs","Baltimore: N/E Suburbs",2692],
+    ["Baltimore City","Baltimore: S Suburbs",28662],
+    ["Baltimore County","Baltimore: S Suburbs",46366],
+    ["Baltimore: N/E Suburbs","Baltimore: S Suburbs",25643],
+    ["Baltimore: S Suburbs","Baltimore: S Suburbs",258651],
+    ["D.C.","Baltimore: S Suburbs",2053],
+    ["D.C.: Inner Suburbs","Baltimore: S Suburbs",39554],
+    ["D.C.: Outer Suburbs","Baltimore: S Suburbs",10603],
+    ["Baltimore City","D.C.",4937],
+    ["Baltimore County","D.C.",5472],
+    ["Baltimore: N/E Suburbs","D.C.",2683],
+    ["Baltimore: S Suburbs","D.C.",29440],
+    ["D.C.","D.C.",235646],
+    ["D.C.: Inner Suburbs","D.C.",425378],
+    ["D.C.: Outer Suburbs","D.C.",70314],
+    ["Baltimore City","D.C.: Inner Suburbs",7651],
+    ["Baltimore County","D.C.: Inner Suburbs",11664],
+    ["Baltimore: N/E Suburbs","D.C.: Inner Suburbs",9907],
+    ["Baltimore: S Suburbs","D.C.: Inner Suburbs",73876],
+    ["D.C.","D.C.: Inner Suburbs",68686],
+    ["D.C.: Inner Suburbs","D.C.: Inner Suburbs",1240767],
+    ["D.C.: Outer Suburbs","D.C.: Inner Suburbs",281572],
+    ["Baltimore City","D.C.: Outer Suburbs",562],
+    ["Baltimore County","D.C.: Outer Suburbs",1278],
+    ["Baltimore: N/E Suburbs","D.C.: Outer Suburbs",3522],
+    ["Baltimore: S Suburbs","D.C.: Outer Suburbs",4038],
+    ["D.C.","D.C.: Outer Suburbs",1734],
+    ["D.C.: Inner Suburbs","D.C.: Outer Suburbs",62220],
+    ["D.C.: Outer Suburbs","D.C.: Outer Suburbs",494716]
+];
+
+var color ={"Baltimore City":"#440154", "Baltimore County":"#433880",  "Baltimore: N/E Suburbs":"#31678d",
+"Baltimore: S Suburbs":"#21918d", "D.C.":"#3cb875", "D.C.: Inner Suburbs":"#97d73e", "D.C.: Outer Suburbs":"#e1e329"};
+var svg = d3.select("body").append("svg").attr("width", 960).attr("height", 500);
+
+svg.append("text").attr("x",400).attr("y",70)
+	.attr("class","header").text("Residence to Workplace Commute Flow");
+
+
+var g =[svg.append("g").attr("transform","translate(200,100)")
+		,svg.append("g").attr("transform","translate(650,100)")];
+
+var bp=[ viz.bP()
+		.data(data)
+		.min(12)
+		.pad(1)
+		.height(400)
+		.width(500)
+		.barSize(35)
+		.fill(d=>color[d.primary])
+];
+
+[0,1].forEach(function(i){
+	g[i].call(bp[i])
+
+	g[i].append("text").attr("x",-50).attr("y",-8).style("text-anchor","middle").text("Residence");
+	g[i].append("text").attr("x", 550).attr("y",-8).style("text-anchor","middle").text("Workplace");
+
+	g[i].append("line").attr("x1",-100).attr("x2",0);
+	g[i].append("line").attr("x1",500).attr("x2",600);
+
+	/*g[i].append("line").attr("y1",610).attr("y2",610).attr("x1",-100).attr("x2",0);*/
+	/*g[i].append("line").attr("y1",610).attr("y2",610).attr("x1",500).attr("x2",600);*/
+
+	g[i].selectAll(".mainBars")
+		.on("mouseover",mouseover)
+		.on("mouseout",mouseout);
+
+	g[i].selectAll(".mainBars").append("text").attr("class","label")
+		.attr("x",d=>(d.part=="primary"? -30: 50))
+		.attr("y",d=>+6)
+		.text(d=>d.key)
+		.attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
+
+	g[i].selectAll(".mainBars").append("text").attr("class","perc")
+		.attr("x",d=>(d.part=="primary"? -170: 220))
+		.attr("y",d=>+6)
+		.text(function(d){ return d3.format("0.0%")(d.percent)})
+		.attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
+});
+
+
+
+
+function mouseover(d){
+	[0,1].forEach(function(i){
+		bp[i].mouseover(d);
+
+		g[i].selectAll(".mainBars").select(".perc")
+		.text(function(d){ return d3.format("0.0%")(d.percent)});
+	});
+}
+function mouseout(d){
+	[0,1].forEach(function(i){
+		bp[i].mouseout(d);
+
+		g[i].selectAll(".mainBars").select(".perc")
+		.text(function(d){ return d3.format("0.0%")(d.percent)});
+	});
+}
+d3.select(self.frameElement).style("height", "800px");
+</script>
+<p>Source: American Community Survey, 2009-2013 Estimates <img src="https://DC-Policy-Center.github.io/iframe-content/baltimore-dc-commute/dcpc_branding_rgb.png" style="height: 100%; width: 100%;" style="float:right"></p>
+<div>
+<style>
+body {font-family: "Lato", sans-serif;}
+button.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #fff;
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+        width: 80%;
+				    font-size: 15px;
+    background-color: white;
+}
+</style>
+</head>
+<body>
+
+
+<button class="accordion">Click here for an explanation of geographic groupings</button>
+<div class="panel">
+  <p><ul><li><strong>Baltimore N/E Suburbs</strong> includes Carroll, Hartford, and Queen Anne's Counties.</li>
+    <li><strong>Baltimore S Suburbs</strong> includes Anne Arundel and Howard Counties.
+  <li><strong>D.C. Inner Suburbs</strong> includes the Cities of Alexandria, Fairfax, and Falls Church + Arlington,
+Fairfax County, Falls Church, Montgomery, and Prince George's Counties.</li>
+<li><strong>D.C. Outer Suburbs</strong> includes Cities of Manassas, Manassas Park, and Fredericksburg.
+Calvert, Charles, Clarke, Fauquier, Frederick, Loudoun, Jefferson,
+Rappahannock, Spotsylvania, Stafford, and Warren Counties.</li></ul></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+</div>
+
+
+</body>
+</html>
