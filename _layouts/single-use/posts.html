@@ -109,7 +109,7 @@
                       {{ post.description }}
                   </h3>
               </a>
-              <p class="post-meta">Written by <a href="#">{{ post.author }}</a> on {{ post.date | date: '%B %d, %Y' }}</p>
+              <p class="post-meta">Written by <a href= {{ post.author_url }}>{{ post.author }}</a> on {{ post.date | date: '%B %d, %Y' }}</p>
           </div>
           {% endfor %}
         </div>
