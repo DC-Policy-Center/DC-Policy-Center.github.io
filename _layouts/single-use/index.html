@@ -59,11 +59,11 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main Contentlimit:3 -->
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              {% for post in site.posts limit:3 %}
+              {% for post in site.posts %}
 
 
               <div class="post-preview">
@@ -77,9 +77,10 @@
                   </a>
                   <p class="post-meta">Written by <a href= {{ post.author_url }}>{{ post.author }}</a> on {{ post.date | date: '%B %d, %Y' }}</p>
               </div>
-
               {% endfor %}
-
+            </div>
+        </div>
+    </div>
                 <hr>
 
                 <!-- Pager -->
@@ -88,9 +89,7 @@
                         <a href="posts.html">Older Posts &rarr;</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Footer -->
     <footer>
