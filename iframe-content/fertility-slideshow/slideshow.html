@@ -1,94 +1,101 @@
-<style>
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
+<!DOCTYPE html>
+<html>
+<head>
 
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-</style>
+      <title>D.C. Policy Center: Data Blog</title>
+      <!-- Favicon WANT TO REMOVE BACKGROUND AT SOME POINT -->
+      <link rel="shortcut icon" href="../../img/favicon.png"/>
+      <!-- Bootstrap Core CSS -->
+      <link href="../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+      <!-- Theme CSS -->
+      <link href="../../assets/css/clean-blog.css" rel="stylesheet">
+
+      <!-- Custom Fonts -->
+      <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+      <!-- #####################BEGIN Google Analytics Snipit########################### -->
+          <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-92959608-2', 'auto');
+            ga('send', 'pageview');
+          </script>
+      <!-- ######################END Google Analytics Snipit######################### -->
+
+
+<link href="slideshow.css" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  Menu <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand" href="../../index.html">D.C. Policy Center: Data Blog</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="../../index.html">Home</a>
+                  </li>
+                  <li>
+                      <a href="../../posts/style-guide-series.html">Style Guide</a>
+                  </li>
+                  <li>
+                      <a href="../../about.html">About</a>
+                  </li>
+                  <li>
+                      <a href="../../posts.html">Posts</a>
+                  </li>
+                  <li>
+                      <a href="../../contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+  <header class="intro-header" style="background-image: url('../../img/gray-Hex-6D7D8C.jpg')">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <div class="site-heading">
+                      <h1>
+                        Fertility mapping
+                      </h1>
+                      <hr class="small">
+                      <span class="subheading">
+                        Women with births for the past 12 months for 2009 to 2015
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
 
 
 <div class="slideshow-container">
-  <div class="mySlides fade">
+  <div class="mySlides">
     <img src="fertility-2009.gif" style="width:100%">
   </div>
 
@@ -130,35 +137,67 @@
   <span class="dot" onclick="currentSlide(6)"></span>
   <span class="dot" onclick="currentSlide(7)"></span>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <section class="main-content">
+            <p> A map of women with births in the past 12 months for years 2009 to 2015.  The full article can be found at
+              <a href="https://www.dcpolicycenter.org/publications/how-fertility-rates-in-d-c-have-changed-over-the-past-decade/">our main website here</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                  <li>
+                      <a href="https://twitter.com/dcpolicycenter">
+                          <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.facebook.com/TheDCPolicyCtr/">
+                          <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                          </span>
+                      </a>
+                  </li>
+                    <li>
+                        <a href="http://www.github.com/DC-Policy-Center">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; D.C. Policy Center 2017</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="slideshow.js">
+<!-- jQuery -->
+<script src="../../vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- Theme JavaScript </script> -->
+<script src="../../js/clean-blog.min.js"></script>
 
 
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-showSlides();
-</script>
+</body>
+</html>
