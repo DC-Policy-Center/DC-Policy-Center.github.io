@@ -1,5 +1,5 @@
 ---
 layout: single-use/index
-title: Home
+title: Index
 permalink: /index
 ---
