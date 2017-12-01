@@ -3,6 +3,7 @@ layout: post
 title: Greenhouse gas emissions in D.C.
 description: Using R and Python to map CO<sub>2</sub> in th District
 author: Randy Smith
+author_url: https://www.dcpolicycenter.org/people/randy-smith/
 date: 2017-08-23
 permalink: /posts/carbon-emission
 ---

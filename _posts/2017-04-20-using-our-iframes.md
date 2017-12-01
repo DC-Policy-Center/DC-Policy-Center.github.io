@@ -4,6 +4,8 @@ title: Using our iframes
 description: Interactives, figures, and maps
 date: 2017-04-20
 permalink: /posts/using-our-iframes
+author: Michael Watson
+author_url: https://www.dcpolicycenter.org/people/michael-watson/
 ---
 
 ## Website interactives

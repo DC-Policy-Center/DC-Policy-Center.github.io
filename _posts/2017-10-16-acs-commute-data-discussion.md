@@ -3,6 +3,7 @@ layout: auto-post
 title:  A Discussion on ACS 1-year Estimate Commute Data
 description: An analysis of data and handling margin of error
 author: Simone Roy
+author_url: https://www.dcpolicycenter.org/people/simone-roy/
 date: 2017-10-16
 permalink: /posts/acs-commute-data-discussion/
 ---

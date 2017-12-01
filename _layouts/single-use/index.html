@@ -63,53 +63,23 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              {% for post in site.posts limit:3 %}
+
+
               <div class="post-preview">
                   <a href="posts/acs-commute-data-discussion">
                       <h2 class="post-title">
-                         A Discussion on ACS 1-year Estimate Commute Data
+                         {{ post.title }}
                       </h2>
                       <h3 class="post-subtitle">
-                          An analysis of data and handling margin of error
+                          {{ post.description }}
                       </h3>
                   </a>
-                  <p class="post-meta">Written by <a href="#">Simone Roy</a> on October 10, 2017</p>
-              </div>
-              <div class="post-preview">
-                  <a href="posts/carbon-emission">
-                      <h2 class="post-title">
-                        Carbon Emission
-                      </h2>
-                      <h3 class="post-subtitle">
-                          Using R and Python to map CO2 in th District
-                      </h3>
-                  </a>
-                  <p class="post-meta">Written by <a href="https://www.dcpolicycenter.org/people/randy-smith/">Randy Smith</a> on August 23, 2017</p>
+                  <p class="post-meta">Written by <a href= {{ post.author_url }}>{{ post.author }}</a> on {{ post.date | date: '%B %d, %Y' }}</p>
               </div>
 
-                <div class="post-preview">
-                    <a href="posts/urban-heat-island">
-                        <h2 class="post-title">
-                          Building the Heat Vulnerability Index
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Analysis from Urban Heat Island
-                        </h3>
-                    </a>
-                    <p class="post-meta">Written by <a href="https://www.dcpolicycenter.org/people/randy-smith/">Randy Smith</a> on August 23, 2017</p>
-                </div>
+              {% endfor %}
 
-
-                <div class="post-preview">
-                    <a href="posts/style-guide-series.html">
-                        <h2 class="post-title">
-                          Style Guide Series: Introduction
-                        </h2>
-                        <h3 class="post-subtitle">
-                            The D.C. Policy Center Style Guide Series
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Michael Watson</a> on March 20, 2017</p>
-                </div>
                 <hr>
 
                 <!-- Pager -->

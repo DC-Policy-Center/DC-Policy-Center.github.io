@@ -3,6 +3,7 @@ layout: post
 title: Building the Heat Vulnerability Index
 description: Analysis from Urban Heat Island
 author: Randy Smith
+author_url: https://www.dcpolicycenter.org/people/randy-smith/
 date: 2017-08-23
 permalink: /posts/urban-heat-island
 ---
