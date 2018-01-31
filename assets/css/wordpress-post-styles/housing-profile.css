@@ -1,3 +1,18 @@
+.out-of-frame-h1{
+  font-size: 4rem;
+  margin:2% 12% 2%;
+}
+
+.in-frame-content {
+  margin:2% 15% 2%;
+  padding: 2%;
+  background-color: white;
+}
+
+article {
+background-color: #F8F8F8;
+}
+
 .container {
     display: inline-block;
     width: 100%;
@@ -38,26 +53,7 @@
     background-color: lightblue;
     z-index: 10000;
 }
-.background-full {
-    position: absolute;
-top: 10;
-left: 0;
-    width: 100%;
-height: 50%;
-    z-index: -2;
-}
 
-.out-of-frame-h1{
-  font-size: 4rem;
-  margin:2% 12% 2%;
-}
 
-.in-frame-content {
-  margin:2% 15% 2%;
-  padding: 2%;
-  background-color: white;
-}
 
-article {
-background-color: #F8F8F8;
-}
+<link rel="stylesheet" type="text/css" href="https://DC-Policy-Center.github.io/assets/css/wordpress-post-styles/housing-profile.css">
