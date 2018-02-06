@@ -4,8 +4,8 @@
 
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        width: 1250px;
-        height: 500px;
+        width: 800px;
+        height: 600px;
         position: relative;
     }
     svg {
@@ -226,6 +226,7 @@
     var xAxis = d3.svg.axis()
             .scale(x)
             .tickSize(-height)
+            .tickValues([0, 5000000, 10000000, 15000000, 20000000, 25000000])
             .orient("bottom");
 
     var yAxis = d3.svg.axis()
