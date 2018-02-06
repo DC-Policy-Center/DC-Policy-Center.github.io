@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 1250px;
+        height: 500px;
+        position: relative;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+        position: center;
+    }
+
+    path.slice{
+        stroke-width:2px;
+    }
+
+    text{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h1{
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        color: #000000;
+        font-size: 32px;
+    }
+
+    h4{
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    polyline{
+        opacity: .3;
+        stroke: black;
+        stroke-width: 2px;
+        fill: none;
+    }
+
+    .labelValue
+    {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60%;
+        opacity: .5;
+
+    }
+
+    label {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+    }
+
+    .toolTip {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: -3px 3px 15px #888888;
+        color: black;
+        font: 14px sans-serif;
+        padding: 5px;
+        text-align: center;
+    }
+
+
+    .legend {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60%;
+    }
+    rect {
+        stroke-width: 2;
+    }
+
+    text {
+        font: 12px sans-serif;
+    }
+
+
+    text.value{
+        font-size: 200%;
+        fill: white;
+    }
+
+    text.label{
+        font-size: 100%;
+    }
+
+    .axis text {
+        font: 12px sans-serif;
+    }
+
+    .axis path{
+        fill: none;
+        stroke: #000;
+    }
+
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .axis .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+    .axisHorizontal path{
+        fill: none;
+    }
+
+    .axisHorizontal line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .axisHorizontal .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+    .bar {
+        fill: #6D7D8C;
+        fill-opacity: .9;
+    }
+
+    .y.axis text {
+        font: 14px sans-serif;
+    }
+
+    .x.axis path {
+        display: none;
+    }
+
+
+</style>
+<body>
+<h1>Heavy Rail Ridership, October 2014 and October 2016</h1>
+<p>Excluding the New York Subway</p>
+<p>Click to switch between October 2014 and October 2016 </p>
+<form>
+    <label><input type="radio" name="dataset" id="dataset" value="oct14" checked>October 2014</label>
+    <label><input type="radio" name="dataset" id="dataset" value="oct16">October 2016</label>
+</form>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+    datasetoct14 = [
+      {label:"Cleveland Rapid", value:597100},
+      {label:"PATCO (Philadelphia-Camden)", value:920900},
+      {label:"Baltimore Metro", value:1366000},
+      {label:"Miami Metro", value:1976100},
+      {label:"Los Angeles Metro", value:4291200},
+      {label:"PATH (New York-Newark)", value:6734800},
+      {label:"MARTA (Atlanta)", value:6752700},
+      {label:"DC Metro (District Only)", value:7621105},
+      {label:"SEPTA (Philadelphia)", value:8100100},
+      {label:"BART (San Francisco)", value:12563600},
+      {label:"DC Metro (District/Arington/Alexandria)", value:13326110},
+      {label:"Boston T", value:16576500},
+      {label:"Chicago L", value:22443500},
+      {label:"DC Metro (Whole System)", value:24552592}
+
+    ];
+
+    datasetoct16 = [
+      {label:"Cleveland Rapid", value:705900},
+      {label:"PATCO (Philadelphia-Camden)", value:910700},
+      {label:"Baltimore Metro", value:968400},
+      {label:"Miami Metro", value:1670900},
+      {label:"Los Angeles Metro", value:3840500},
+      {label:"PATH (New York-Newark)", value:6622400},
+      {label:"MARTA (Atlanta)", value:6077600},
+      {label:"DC Metro (District Only)", value:6020673},
+      {label:"SEPTA (Philadelphia)", value:8452600},
+      {label:"BART (San Francisco)", value:11589600},
+      {label:"DC Metro (District/Arington/Alexandria)", value:10527627},
+      {label:"Boston T", value:15021900},
+      {label:"Chicago L", value:21772500},
+      {label:"DC Metro (Whole System)", value:19454200}
+
+    ];
+
+
+    d3.selectAll("input").on("change", selectDataset);
+
+    function selectDataset()
+    {
+        var value = this.value;
+        if (value == "oct14")
+        {
+            change(datasetoct14);
+        }
+        else if (value == "oct16")
+        {
+            change(datasetoct16);
+        }
+
+    }
+
+    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/20), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/20), left: (parseInt(d3.select('body').style('width'), 10)/5)},
+            width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
+            height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
+
+    var div = d3.select("body").append("div").attr("class", "toolTip");
+
+    var formatComma = d3.format(",");
+
+    var y = d3.scale.ordinal()
+            .rangeRoundBands([height, 0], .2, 0.5);
+
+    var x = d3.scale.linear()
+            .range([0, width]);
+
+    var xAxis = d3.svg.axis()
+            .scale(x)
+            .tickSize(-height)
+            .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
+    //.tickFormat(formatPercent);
+
+    var svg = d3.select("body").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+    d3.select("input[value=\"oct14\"]").property("checked", true);
+    change(datasetoct14);
+
+    function change(dataset) {
+
+        y.domain(dataset.map(function(d) { return d.label; }));
+        x.domain([0, 25000000]);
+
+        svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+
+        svg.select(".y.axis").remove();
+        svg.select(".x.axis").remove();
+
+        svg.append("g")
+                .attr("class", "y axis")
+                .call(yAxis)
+                .append("text")
+                .attr("transform", "rotate(0)")
+                .attr("x", 60)
+                .attr("dx", ".1em")
+                .style("text-anchor", "end")
+                .text("Ridership");
+
+
+        var bar = svg.selectAll(".bar")
+                .data(dataset, function(d) { return d.label; });
+        // new data:
+        bar.enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", function(d) { return x(d.value); })
+                .attr("y", function(d) { return y(d.label); })
+                .attr("width", function(d) { return width-x(d.value); })
+                .attr("height", y.rangeBand());
+
+        bar
+                .on("mousemove", function(d){
+                    div.style("left", d3.event.pageX+10+"px");
+                    div.style("top", d3.event.pageY-25+"px");
+                    div.style("display", "inline-block");
+                    div.html("<b>"+(d.label)+":"+"</b>"+"<br>"+(formatComma)(d.value));
+                });
+        bar
+                .on("mouseout", function(d){
+                    div.style("display", "none");
+                });
+
+
+        // removed data:
+        bar.exit().remove();
+
+        // updated data:
+        bar.transition()
+                .duration(750)
+                .attr("x", function(d) { return 0; })
+                .attr("y", function(d) { return y(d.label); })
+                .attr("width", function(d) { return x(d.value); })
+                .attr("height", y.rangeBand());
+
+    };
+  </script>
+  </body>
+  <p>Sources: American Public Transportation Association and Washington Metropolitan Area Transit Authority</br></p>
+  <div style="width: 108px; height: 54px;">
+     <img src="dcpc_branding_rgb.png" style="height: 100%; width: 100%;">
+  </div>
+  </body>
+
+  </html>
