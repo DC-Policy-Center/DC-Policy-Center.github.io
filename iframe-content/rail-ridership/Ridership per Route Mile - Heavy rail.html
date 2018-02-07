@@ -176,7 +176,9 @@
       {label:"DC Metro (District/Arington/Alexandria)", value:265460},
       {label:"DC Metro (District Only)", value:277131},
       {label:"Boston T", value:436224},
-      {label:"PATH (New York-Newark)", value:488029}
+      {label:"PATH (New York-Newark)", value:488029},
+      {label:"New York Subway", value:1089771}
+
 
     ];
 
@@ -194,7 +196,8 @@
       {label:"DC Metro (District/Arington/Alexandria)", value:209714},
       {label:"DC Metro (District Only)", value:218934},
       {label:"Boston T", value:395313},
-      {label:"PATH (New York-Newark)", value:479884}
+      {label:"PATH (New York-Newark)", value:479884},
+       {label:"New York Subway", value:1010150}
 
     ];
 
@@ -232,7 +235,7 @@
     var xAxis = d3.svg.axis()
             .scale(x)
             .tickSize(-height)
-            .tickValues([0, 100000, 200000, 300000, 400000, 500000])
+            .tickValues([0, 200000, 400000, 600000, 800000, 1000000])
             .orient("bottom");
 
     var yAxis = d3.svg.axis()
