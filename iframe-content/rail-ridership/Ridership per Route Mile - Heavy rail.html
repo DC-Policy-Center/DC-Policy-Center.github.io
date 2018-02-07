@@ -178,7 +178,6 @@
       {label:"PATH (New York-Newark)", value:488029},
       {label:"New York Subway", value:1089771}
 
-
     ];
 
     datasetoct16 = [
@@ -196,7 +195,7 @@
       {label:"DC Metro (District Only)", value:218934},
       {label:"Boston T", value:395313},
       {label:"PATH (New York-Newark)", value:479884},
-       {label:"New York Subway", value:1010150}
+      {label:"New York Subway", value:1010150}
 
     ];
 
@@ -259,7 +258,7 @@
     function change(dataset) {
 
         y.domain(dataset.map(function(d) { return d.label; }));
-        x.domain([0, 500000]);
+        x.domain([0, 1000000]);
 
         svg.append("g")
                 .attr("class", "x axis")
