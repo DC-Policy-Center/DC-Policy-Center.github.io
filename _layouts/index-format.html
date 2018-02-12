@@ -12,12 +12,12 @@
       <!-- Favicon WANT TO REMOVE BACKGROUND AT SOME POINT -->
       <link rel="shortcut icon" href="./img/favicon.png"/>
       <!-- Bootstrap Core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+      <link href="https://dc-policy-center.github.io/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
       <!-- Theme CSS -->
-      <link href="assets/css/clean-blog.css" rel="stylesheet">
+      <link href="https://dc-policy-center.github.io/assets/css/clean-blog.css" rel="stylesheet">
 
       <!-- Custom Fonts -->
-      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://dc-policy-center.github.io/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -79,13 +79,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                {% for post in site.posts limit:3 %}
                     <div class="site-heading">
-                        <h1>Not changing D.C. Policy Center</h1>
+                        <h1>D.C. Policy Center</h1>
                         <hr class="small">
                         <span class="subheading">Informing Decisions through Data</span>
                     </div>
-                          {% endfor %}
                 </div>
             </div>
         </div>
@@ -99,8 +97,7 @@
               <div class="post-preview">
                   <a href= {{ post.permalink }}>
                       <h2 class="post-title">
-                         <!-- {{ post.title }} -->
-                         Is this the problem?
+                        {{ post.title }}
                       </h2>
                       <h3 class="post-subtitle">
                           {{ post.description }}

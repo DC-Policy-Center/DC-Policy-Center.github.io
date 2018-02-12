@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: index-format
 title: Index
 permalink: /index
 ---
