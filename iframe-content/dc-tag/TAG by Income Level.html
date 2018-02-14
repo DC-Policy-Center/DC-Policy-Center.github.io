@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 800px;
+        height: 400px;
+        position: relative;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+        position: center;
+    }
+
+    path.slice{
+        stroke-width:2px;
+    }
+
+    text{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h1{
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        color: #000000;
+        font-size: 32px;
+    }
+
+    h4{
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    polyline{
+        opacity: .3;
+        stroke: black;
+        stroke-width: 2px;
+        fill: none;
+    }
+
+    .labelValue
+    {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60%;
+        opacity: .5;
+
+    }
+
+    label {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+    }
+
+    .toolTip {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: -3px 3px 15px #888888;
+        color: black;
+        font: 14px sans-serif;
+        padding: 5px;
+        text-align: center;
+    }
+
+
+    .legend {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60%;
+    }
+    rect {
+        stroke-width: 2;
+    }
+
+    text {
+        font: 12px sans-serif;
+    }
+
+
+    text.value{
+        font-size: 200%;
+        fill: white;
+    }
+
+    text.label{
+        font-size: 100%;
+    }
+
+    .axis text {
+        font: 12px sans-serif;
+    }
+
+    .axis path{
+        fill: none;
+        stroke: #000;
+    }
+
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .axis .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+    .axisHorizontal path{
+        fill: none;
+    }
+
+    .axisHorizontal line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .axisHorizontal .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+    .bar {
+        fill: #6D7D8C;
+        fill-opacity: .9;
+    }
+
+    .y.axis text {
+        font: 14px sans-serif;
+    }
+
+    .x.axis path {
+        display: none;
+    }
+
+
+</style>
+<body>
+  <h1>D.C. TAG Recipients by Income Level</h1>
+  <p>2011-2012 to 2015-2016 School Years</p>
+  <p>Click to switch between school years</p>
+<form>
+  <label><input type="radio" name="dataset" id="dataset" value="SY20112012">2011-2012</label>
+  <label><input type="radio" name="dataset" id="dataset" value="SY20122013">2012-2013</label>
+  <label><input type="radio" name="dataset" id="dataset" value="SY20132014">2013-2014</label>
+  <label><input type="radio" name="dataset" id="dataset" value="SY20142015">2014-2015</label>
+  <label><input type="radio" name="dataset" id="dataset" value="SY20152016" checked>2015-2016</label>
+</form>
+<script src="https://DC-Policy-Center.github.io/iframe-content/dc-tag/d3.min.js"></script>
+<script>
+
+    datasetSY20152016 = [
+        {label:"$110,000 or more", value:814},
+        {label:"$75,000-$109,999", value:405},
+        {label:"$48,000-$74,999", value:609},
+        {label:"$30,001-$47,999", value:707},
+        {label:"$0-$29,999", value:1977},
+        {label:"Negative Taxable Income", value:13}
+
+    ];
+
+    datasetSY20142015 = [
+      {label:"$110,000 or more", value:770},
+      {label:"$75,000-$109,999", value:377},
+      {label:"$48,000-$74,999", value:623},
+      {label:"$30,001-$47,999", value:676},
+      {label:"$0-$29,999", value:1905},
+      {label:"Negative Taxable Income", value:64}
+    ];
+
+    datasetSY20132014 = [
+      {label:"$110,000 or more", value:773},
+      {label:"$75,000-$109,999", value:406},
+      {label:"$48,000-$74,999", value:627},
+      {label:"$30,001-$47,999", value:743},
+      {label:"$0-$29,999", value:1961},
+      {label:"Negative Taxable Income", value:57}
+    ];
+
+    datasetSY20122013 = [
+      {label:"$110,000 or more", value:833},
+      {label:"$75,000-$109,999", value:459},
+      {label:"$48,000-$74,999", value:710},
+      {label:"$30,001-$47,999", value:787},
+      {label:"$0-$29,999", value:2233},
+      {label:"Negative Taxable Income", value:61}
+    ];
+
+    datasetSY20112012 = [
+      {label:"$110,000 or more", value:867},
+      {label:"$75,000-$109,999", value:470},
+      {label:"$48,000-$74,999", value:722},
+      {label:"$30,001-$47,999", value:835},
+      {label:"$0-$29,999", value:2272},
+      {label:"Negative Taxable Income", value:90}
+    ];
+
+    d3.selectAll("input").on("change", selectDataset);
+
+    function selectDataset()
+    {
+        var value = this.value;
+        if (value == "SY20152016")
+        {
+            change(datasetSY20152016);
+        }
+        else if (value == "SY20142015")
+        {
+            change(datasetSY20142015);
+        }
+        else if (value == "SY20132014")
+        {
+            change(datasetSY20132014);
+        }
+        else if (value == "SY20122013")
+        {
+            change(datasetSY20122013);
+        }
+        else if (value == "SY20112012")
+        {
+            change(datasetSY20112012);
+        }
+    }
+
+    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/20), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/20), left: (parseInt(d3.select('body').style('width'), 10)/5)},
+            width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
+            height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
+
+    var div = d3.select("body").append("div").attr("class", "toolTip");
+
+    var formatComma = d3.format(",");
+
+    var y = d3.scale.ordinal()
+            .rangeRoundBands([height, 0], .2, 0.5);
+
+    var x = d3.scale.linear()
+            .range([0, width]);
+
+    var xAxis = d3.svg.axis()
+            .scale(x)
+            .tickSize(-height)
+            .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
+    //.tickFormat(formatPercent);
+
+    var svg = d3.select("body").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+    d3.select("input[value=\"SY20152016\"]").property("checked", true);
+    change(datasetSY20152016);
+
+    function change(dataset) {
+
+        y.domain(dataset.map(function(d) { return d.label; }));
+        x.domain([0, 2500]);
+
+        svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+
+        svg.select(".y.axis").remove();
+        svg.select(".x.axis").remove();
+
+        svg.append("g")
+                .attr("class", "y axis")
+                .call(yAxis)
+                .append("text")
+                .attr("transform", "rotate(0)")
+                .attr("x", 60)
+                .attr("dx", ".1em")
+                .style("text-anchor", "end")
+                .text("Count");
+
+
+        var bar = svg.selectAll(".bar")
+                .data(dataset, function(d) { return d.label; });
+        // new data:
+        bar.enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", function(d) { return x(d.value); })
+                .attr("y", function(d) { return y(d.label); })
+                .attr("width", function(d) { return width-x(d.value); })
+                .attr("height", y.rangeBand());
+
+                bar
+                        .on("mousemove", function(d){
+                            div.style("left", d3.event.pageX+10+"px");
+                            div.style("top", d3.event.pageY-25+"px");
+                            div.style("display", "inline-block");
+                            div.html("<b>"+(d.label)+":"+"</b>"+"<br>"+(formatComma)(d.value));
+                        });
+                bar
+                        .on("mouseout", function(d){
+                            div.style("display", "none");
+                        });
+
+
+        // removed data:
+        bar.exit().remove();
+
+        // updated data:
+        bar.transition()
+                .duration(750)
+                .attr("x", function(d) { return 0; })
+                .attr("y", function(d) { return y(d.label); })
+                .attr("width", function(d) { return x(d.value); })
+                .attr("height", y.rangeBand());
+
+    };
+    </script>
+    </body>
+    <p>Sources: OSSE</br></p>
+    <div style="width: 108px; height: 54px;">
+       <img src="dcpc_branding_rgb.png" style="height: 100%; width: 100%;">
+    </div>
+    </body>
+
+    </html>
