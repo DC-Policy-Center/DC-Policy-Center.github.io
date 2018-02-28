@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet'/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+    <style>
+        body { margin:0; padding:0;}
+
+        #map {position:absolute; top:0; bottom:0; width: 100%;}
+        
+        #sidebar {
+            position: absolute;
+            top: 60%;
+            left: 2%;
+            bottom: 5%;
+            width: 200px;
+            overflow: auto;
+            background: #ffffff;
+            opacity: 0.95;
+            padding-left: 10px;
+
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px; 
+        }
+
+        .legendDesc {
+            margin: 2% 0;
+        }
+
+        #listLegend {
+            text-align: justify;
+            width: 95%;;
+            margin: 0;
+            padding: 0;
+        }
+
+        #listLegend:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+
+        #listLegend li {
+            display: inline-block;
+        }
+
+        .row {
+          height: 20px;
+          width: 95%;
+        }
+
+        .colors {
+          background: linear-gradient(to right, #e8f8fc, #5a726e);
+        }
+
+
+</style>
+</head>
+<body>
+<div id='map'></div>
+    
+<div id='sidebar'>
+    <p class="legendDesc">Number of Airbnb Listings</p>
+    <div id="tooltip-name"></div>
+
+    <div class='row colors'></div> 
+    <ul id='listLegend'>
+        <li>0</li>
+        <li>225</li>
+        <li>450</li>
+    </ul> 
+
+    <div id='tooltip'></div>
+</div>
+
+
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGF0YWxlbnNkYyIsImEiOiJjaWVnOGttYnMwMDBqc2htM2ZmcjZ4NmZxIn0.9iGQPNKsl1jtP5KriDm3wQ';
+  
+ var COLORS =  ['#e8f8fc', '#435653'],
+    BREAKS = [0, 450],
+    FILTERUSE;
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style:'mapbox://styles/datalensdc/cjdd594dndc7s2rnvt2vtbgjh', 
+    center: [-77.0069,38.9072], 
+    zoom: 11
+});
+
+map.addControl(new mapboxgl.NavigationControl());
+
+map.on('load', function () {
+            map.addSource('bnbCount', {
+                type: 'geojson',
+                data: 'hoodBnbSum.geojson'
+            });
+
+            map.addLayer({
+                "id": "hoods",
+                "type": "fill",
+                "source": "bnbCount",
+                "paint": {
+                    "fill-color": {
+                        property: 'count17',
+                        stops: [
+                    [BREAKS[0], COLORS[0]],
+                    [BREAKS[1], COLORS[1]]
+                    ]
+                    },
+                    "fill-opacity": 0.85,
+                    "fill-outline-color": "#f0f0f0"
+                }
+             });
+
+        });
+
+
+        map.on("mousemove", function (e) {
+            var features = map.queryRenderedFeatures(e.point, {
+                layers: ["hoods"]
+            });
+
+            if (features.length) {
+                document.getElementById('tooltip').innerHTML = "<br>" + features[0].properties.nbhShort + "<br>" + features[0].properties.count17 + " listings<br>" + features[0].properties.unitProp + "% whole-units<br>" + features[0].properties.commProp + "% commercial listings";
+            } else {
+                document.getElementById('tooltip-name').innerHTML = "";
+                document.getElementById('tooltip').innerHTML = "";
+            }
+        });
+</script>
+</body>
+</html>
