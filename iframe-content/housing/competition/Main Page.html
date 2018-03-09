@@ -1,0 +1,90 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <script src="myScript.js"></script>
+<link rel="stylesheet" type="text/css" href="myexternal.css">
+<link rel="stylesheet" href="fontawesome-all.css">
+</head>
+<body>
+<h1>Competition for Middle-Income Homes from Singles and Doubles </h1>
+
+<form id="form1" method="post">
+   <label style="font-size: 18px; font-family: 'Lato'"> Select a neighborhood: <select id="location" onchange="setIframeSource()">
+      <option style="font-family: 'Lato'" value="dummy.html">Select a neighborhood ...</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/16th_St_Heights.html">16th St Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Anacostia.html">Anacostia</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Brightwood.html">Brightwood</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Brookland.html">Brookland</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Chevy_Chase.html">Chevy Chase</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Chillum.html">Chillum</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Columbia_Heights.html">Columbia Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Congress_Heights.html">Congress Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Deanwood.html">Deanwood</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Eckington.html">Eckington</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Foggy_Bottom.html">Foggy Bottom</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Forest_Hills.html">Forest Hils</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Fort_Dupont_Park.html">Fort Dupont Park</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Fort_Lincoln.html">Fort Lincoln</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Hillcrest.html">Hillcrest</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Kalorama.html">Kalorama</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Marshall_Heights.html">Marshall Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Michigan_Park.html">Michigan Park</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Observatory_Circle.html">Observatory Circle</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Old_CityI.html">Old City I</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Old_CityII.html">Old City II</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Petworth.html">Petworth</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Randle_Heights.html">Randle Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Riggs_Park.html">Riggs Park</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Shepherd_Park.html">Shepherd Park</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Takoma.html">Takoma</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Trinidad.html">Trinidad</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Woodridge.html">Woodridge</option>
+
+   </select></label>
+</form>
+
+<form id="form2" method="post">
+   <label style="font-size: 18px; font-family: 'Lato'"> Select a comparison neighborhood: <select id="location2" onchange="setIframeSource2()">
+      <option style="font-size: 12px; font-family: 'Lato'" value="dummy2.html">Select a neighborhood ...</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/16th_St_Heights.html">16th St Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Anacostia.html">Anacostia</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Brightwood.html">Brightwood</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Brookland.html">Brookland</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Chevy_Chase.html">Chevy Chase</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Chillum.html">Chillum</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Columbia_Heights.html">Columbia Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Congress_Heights.html">Congress Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Deanwood.html">Deanwood</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Eckington.html">Eckington</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Foggy_Bottom.html">Foggy Bottom</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Forest_Hills.html">Forest Hils</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Fort_Dupont_Park.html">Fort Dupont Park</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Fort_Lincoln.html">Fort Lincoln</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Hillcrest.html">Hillcrest</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Kalorama.html">Kalorama</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Marshall_Heights.html">Marshall Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Michigan_Park.html">Michigan Park</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Observatory_Circle.html">Observatory Circle</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Old_CityI.html">Old City I</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Old_CityII.html">Old City II</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Petworth.html">Petworth</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Randle_Heights.html">Randle Heights</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Riggs_Park.html">Riggs Park</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Shepherd_Park.html">Shepherd Park</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Takoma.html">Takoma</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Trinidad.html">Trinidad</option>
+      <option value="file:///C:/Users/sroy/Work/Viz/Waffle Chart/neighborhoods/Woodridge.html">Woodridge</option>
+
+   </select></label>
+</form>
+</body>
+<iframe id="myIframe" src="dummy.html" frameborder="0" marginwidth="0" marginheight="0" width="900" height="180"><meta charset="UTF-8"></iframe><br>
+<iframe id="myIframe2" src="dummy2.html" frameborder="0" marginwidth="0" marginheight="0" width="900" height="180"><meta charset="UTF-8"></iframe></br>
+
+<div><i class="fas fa-home fa-sm" id ="middlesinglesdoubles"></i><span class = "legend">Competition from middle-income singles and doubles</span></div>
+<div><i class="fas fa-home fa-sm" id ="middledoubles"></i><span class = "legend">Competition from middle-income doubles</span></div>
+<div><i class="fas fa-home fa-sm" id ="highersinglesdoubles"></i><span class = "legend">Competition from higher-income singles and doubles</span></div>
+
+<h4>Each house icon represents 20 homes. </h4>
+</html>
