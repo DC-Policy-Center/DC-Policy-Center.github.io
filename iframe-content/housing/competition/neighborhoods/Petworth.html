@@ -22,7 +22,7 @@ var data = [
 
 /* to color elements we use the class name ( slugify(name) ) */
 var domain = data.map(function(d){ return slugify(d.name); })
-var range = ["#7b7b7b", "#a1a1a1", "#91cf60"]
+var range = ["#7b7b7b", "#adc29d", "#91cf60"]
 var palette = d3.scale.ordinal().domain(domain).range(range);
 
 var chart3 = d3waffle()
