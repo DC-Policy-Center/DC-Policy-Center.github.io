@@ -38,6 +38,13 @@ $(window).on('load', function(){
         spacingBottom: 50,
        // marginBottom: 20,
             events: {
+                load: function() {
+                    this.credits.element.onclick = function() {
+                      window.open(
+                        'http://www.dcpolicycenter.org',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );
+                    }},
                 redraw: function () {
                     if (imgObj) {
                         $(imgObj.element).remove();
