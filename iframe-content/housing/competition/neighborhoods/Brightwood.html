@@ -86,7 +86,7 @@ var palette = d3.scale.ordinal().domain(domain).range(range);
 var chart3 = d3waffle()
                 .rows(7)
                 .scale(1/20)
-                .icon("")
+                .icon("&#xf015;")
                 .colorscale(palette)
                 .appearancetimes(function(d, i){ return i*10 + Math.random()*250;})
                 .height(120);
