@@ -45,7 +45,7 @@ option {
 @media only screen and (max-width: 812) {
 
       .legend {
-              padding-left: 6rem; // change here
+              padding-left: 4rem; // change here
               }
 
               select {
