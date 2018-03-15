@@ -1,24 +1,24 @@
 body {
-  font-family: Helvetica, sans serif;
+  font-family: Lato, Helvetica, sans serif;
   font-size: 16px;
   color: #333;
 }
 
 h1 {
-  font-family: Lato, sans serif;
+  font-family: Lato, Helvetica, sans serif;
   font-size: 30px;
   color: #333;
 }
 
 select {
     font-size: 13px;
-    font-family: 'Lato', sans serif;
+    font-family: Lato, Helvetica, sans serif;
 }
 
 
 option {
     font-size: 13px;
-    font-family: 'Lato', sans serif;
+    font-family: Lato, Helvetica, sans serif;
 }
 
 #middlesinglesdoubles {
