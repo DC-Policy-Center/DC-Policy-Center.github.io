@@ -7,16 +7,37 @@
   <script type="text/javascript" src="jquery-3.3.1.js"></script>
   <style type="text/css">
     .highcharts-menu-item{
-      font-family: Lato, sans serif;
-      font-size: 16px;
+      font-family: 'Lato', sans serif;
+      font-size: '16px';
       color: #333;
     }
+
+    .highcharts-axis-labels{
+       font-family: 'Helvetica', sans serif;
+       font-size: '16px';
+       color: #333;
+
+    }
+
+    .highcharts-legend-item{
+       font-family: 'Helvetica', sans serif;
+       font-size: '14px';
+       font-weight: normal;
+       color: #333;
+    }
+
+    .highcharts-credits{
+      font-family: 'Lato', sans serif;
+    }
+
+
   </style>
 
   <title>Availability and Affordability of Units</title>
 
 <script>
 $(window).on('load', function(){
+
     Highcharts.setOptions({
                   lang: {
         thousandsSep: ','
@@ -38,10 +59,10 @@ $(window).on('load', function(){
         spacingBottom: 50,
        // marginBottom: 20,
             events: {
-                load: function() {
+              load: function() {
                     this.credits.element.onclick = function() {
                       window.open(
-                        'http://www.dcpolicycenter.org', // could edit link to link directly to report
+                        'http://www.dcpolicycenter.org',
                         '_blank' // <- This is what makes it open in a new window.
                       );
                     }},
@@ -55,11 +76,12 @@ $(window).on('load', function(){
             }
         },
 
+
     credits: {
         text: 'Source: Housing database compiled by the D.C. Policy Center',
-        href: 'javascript:window.open("http://www.dcpolicycenter.org", "_blank")',
+        href: 'http://www.dcpolicycenter.org',
         style: {
-            fontSize: '10pt'
+            fontSize: '14px'
         },
         position: {
             align: 'left',
@@ -125,7 +147,7 @@ $(window).on('load', function(){
         }
     },
 
-        plotOptions: {
+    plotOptions: {
         bar: {
         formatter: function () { return
                 Highcharts.numberFormat(this.y,0);
@@ -183,7 +205,8 @@ series: [{
                         }
                     }
                 }
-    }
+    },
+
 
     }, function (chart) { // on complete
         imgObj = chart.renderer
@@ -199,7 +222,7 @@ series: [{
 </head>
 
 <body>
-<script src="highcharts.js"></script>
+  <script src="highcharts.js"></script>
 <script src="exporting.js"></script>
 <script src="offline-exporting.js"></script>
 <div id="container" style="min-width: 410px; min-height: 400px; margin: 0 auto"></div>
