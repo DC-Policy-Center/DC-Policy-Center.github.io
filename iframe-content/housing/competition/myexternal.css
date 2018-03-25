@@ -21,18 +21,14 @@ option {
     font-family: Lato, Helvetica, sans-serif;
 }
 
-#middlesinglesdoubles {
-  color: #7b7b7b;
-  font-weight: 900;
-}
 
 #middledoubles {
-  color: #a1a1a1;
+  color: #034e7b;
   font-weight: 900;
 }
 
-#highersinglesdoubles {
-  color: #91cf60;
+#higherdoubles {
+  color: #3690c0;
   font-weight: 900;
 }
 
