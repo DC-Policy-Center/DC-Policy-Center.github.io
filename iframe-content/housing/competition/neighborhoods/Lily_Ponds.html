@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="d3.v3.js"></script>
+  <script type="text/javascript" src="d3-waffle.js"></script>
+  <link rel="stylesheet" href="neighborhood-css.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<title>Competition for Middle-Income Homes from Singles and Doubles </title>
+<h1>Lily Ponds</h1>
+<script type='text/javascript'>
+window.onload=function(){
+var data = [
+  { "name": "Competition from couples earning up to 120 AMI", "value": 726},
+  { "name": "Competition from couples earning 120 to 150 AMI", "value": 5}
+];
+/* to color elements we use the class name ( slugify(name) ) */
+var domain = data.map(function(d){ return slugify(d.name); })
+var range = ["#225ea8", "#7fcdbb"]
+var palette = d3.scale.ordinal().domain(domain).range(range);
+
+var chart3 = d3waffle()
+                .rows(7)
+                .scale(1/20)
+                .icon("")
+                .colorscale(palette)
+                .appearancetimes(function(d, i){ return i*10 + Math.random()*250;})
+                .height(120);
+d3.select("#chart")
+  .datum(data)
+  .call(chart3);
+}
+</script>
+</head>
+<body>
+  <div id="chart"></div>
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "LxhgLqo0"
+    }], "*")
+  }
+</script>
+</body>
+</html>
