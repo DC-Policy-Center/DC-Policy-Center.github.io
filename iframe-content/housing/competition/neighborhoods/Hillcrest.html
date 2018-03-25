@@ -14,14 +14,12 @@
 <script type='text/javascript'>
 window.onload=function(){
 var data = [
-  { "name": "Competition from middle-income singles and doubles", "value": 153},
-  { "name": "Competition from middle-income doubles", "value": 449},
-  { "name": "Competition from higher-income doubles and singles", "value": 292}
+  { "name": "Competition from couples earning up to 120 AMI", "value": 1775},
+  { "name": "Competition from couples earning 120 to 150 AMI", "value": 292}
 ];
-
 /* to color elements we use the class name ( slugify(name) ) */
 var domain = data.map(function(d){ return slugify(d.name); })
-var range = ["#7b7b7b", "#a1a1a1", "#91cf60"]
+var range = ["#225ea8", "#7fcdbb"]
 var palette = d3.scale.ordinal().domain(domain).range(range);
 
 var chart3 = d3waffle()
