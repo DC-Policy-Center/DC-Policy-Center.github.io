@@ -48,9 +48,9 @@ h1 {
 
 .site-bar-sticky {
      position: fixed;
-    top: 6;
+    top: 60%;
     width: 15%;
-    left: 0;
+    left: 10px;
     font-size: 6px;
     background-color: white;
     z-index: 10000;
