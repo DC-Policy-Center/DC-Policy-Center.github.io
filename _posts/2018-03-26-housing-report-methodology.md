@@ -16,20 +16,16 @@ The [executive summary](https://www.dcpolicycenter.org/publications/taking-stock
 # Appendix I: Methodology
 The analysis presented in this study relies on estimates of housing units and housing values built from a comprehensive dataset that combines information from eight publicly available sets of data:
 
-*	Real property tax assessment database  which provides information on the use of each property, the assessed value of each property, the type of tax classification for each property and whether the property is exempt from taxation or receives special tax treatment.
-
-*	Computer Assisted Mass Appraisal data for residential units, which provide information on the characteristics of the residential units, including living area, characteristics of the structure, and age of the structure.
-
-*	Computer Assisted Mass Appraisal data for condominiums, which provide similar information for individual condominium units.
-
-*	Computer Assisted Mass Appraisal data for commercial property, which provide information on apartment buildings that are assessed as a single entity. Not all these buildings are commercial, in the sense that they have units available for rent. They also include cooperatives  where a single corporate entity owns the buildings of the cooperative and is responsible for the real property taxes.
-
-*	Common ownership lots spatial dataset, which is a map of all lots in the District.
-
-*	A spatial dataset called the “Condominium relate file,” which maps all condominium units that are assessed separately to a single common ownership lot on which the condominium building resides.
-
-*	Assessment to sales price report for residential properties published by the OCFO
-*	Capitalization rates used in real property assessment, published by the OCFO.
+<ul>
+ 	<li><a href="http://opendata.dc.gov/datasets/integrated-tax-system-public-extract">Real property tax assessment database</a> which provides information on the use of each property, the assessed value of each property, the type of tax classification for each property and whether the property is exempt from taxation or receives special tax treatment.</li>
+ 	<li>Computer Assisted Mass Appraisal data for <a href="http://opendata.dc.gov/datasets/computer-assisted-mass-appraisal-residential">residential units</a>, which provide information on the characteristics of the residential units, including living area, characteristics of the structure, and age of the structure.</li>
+ 	<li>Computer Assisted Mass Appraisal data for <a href="http://opendata.dc.gov/datasets/computer-assisted-mass-appraisal-condominium">condominiums</a>, which provide similar information for individual condominium units.</li>
+ 	<li>Computer Assisted Mass Appraisal data for <a href="http://opendata.dc.gov/datasets/computer-assisted-mass-appraisal-commercial">commercial property</a>, which provide information on apartment buildings that are assessed as a single entity. Not all these buildings are commercial, in the sense that they have units available for rent. They also include <a href="http://coopsdc.org/wp-content/uploads/2014/07/Co-ops101-PDF.pdf">cooperatives</a> where a single corporate entity owns the buildings of the cooperative and is responsible for the real property taxes.</li>
+ 	<li><a href="http://opendata.dc.gov/datasets/common-ownership-lots">Common ownership lots</a> spatial dataset, which is a map of all lots in the District of Columbia.</li>
+ 	<li>A spatial dataset called the “<a href="http://opendata.dc.gov/datasets/condo-relate-table">Condominium relate file</a>,” which maps all condominium units that are assessed separately to a single common ownership lot on which the condominium building resides.</li>
+ 	<li><a href="https://otr.cfo.dc.gov/sites/default/files/dc/sites/otr/publication/attachments/FY%202018%20Assessment%20Ratio%20Report_.pdf">Assessment to sales price repor</a>t for residential properties published by the OCFO</li>
+ 	<li>Capitalization rates used in real property assessment, published by the OCFO.</li>
+</ul>
 
 ## Step 1: Determining number of buildings that hold the District’s housing stock and estimating the number of units
 
