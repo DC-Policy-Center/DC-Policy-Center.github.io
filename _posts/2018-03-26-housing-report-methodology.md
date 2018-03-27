@@ -12,6 +12,8 @@ All of the data used in the housing report can be found in the excel sheet here:
 
 [Excel download](https://dc-policy-center.github.io/assets/data-resources/housing-report-chart-data.xlsx)
 
+The [executive summary](https://www.dcpolicycenter.org/publications/taking-stock/) and [full report]() can be seen [on our main website](https://www.dcpolicycenter.org). The PDF version of the report can also be downloaded [here](https://www.dcpolicycenter.org/wp-content/uploads/2018/03/DC-Policy-Center-Housing-Report.final_.March25.pdf).
+
 # Appendix I: Methodology
 The analysis presented in this study relies on estimates of housing units and housing values built from a comprehensive dataset that combines information from eight publicly available sets of data:
 
