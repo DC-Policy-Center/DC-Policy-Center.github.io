@@ -45,11 +45,13 @@ h1 {
   background-color: lightblue;
   z-index: 0;
 }
+
 .site-bar-sticky {
-   position: fixed;
-  top: 10;
-  width: 10%;
-  left: 0;
-  background-color: lightblue;
-  z-index: 10000;
+     position: fixed;
+    top: 6;
+    width: 15%;
+    left: 0;
+    font-size: 6px;
+    background-color: white;
+    z-index: 10000;
 }
