@@ -1,6 +1,6 @@
 ---
 layout: auto-post
-title:  Affordable housing in D.C.
+title:  Taking Stock of the District’s Housing Stock
 description: A methodology write-up
 author: Yesim Sayin-Taylor
 author_url: https://www.dcpolicycenter.org/people/Yesim-sayin-taylor/
@@ -8,8 +8,7 @@ date: 2018-3-26
 permalink: /posts/housing-report-methodology/
 ---
 
-All of the data used in the housing report can be found in the excel sheet here:
-
+A summary of the data used in the housing report can be found in the excel sheet here:
 [Excel download](https://dc-policy-center.github.io/assets/data-resources/housing-report-chart-data.xlsx)
 
 The [executive summary](https://www.dcpolicycenter.org/publications/taking-stock/) and [full report](https://www.dcpolicycenter.org/?post_type=publications&p=2145&preview=true) can be seen [on our main website](https://www.dcpolicycenter.org). The PDF version of the report can also be downloaded [here](https://www.dcpolicycenter.org/wp-content/uploads/2018/03/DC-Policy-Center-Housing-Report.final_.March25.pdf).
