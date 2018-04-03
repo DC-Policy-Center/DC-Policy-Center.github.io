@@ -1,0 +1,134 @@
+
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Leaflet with Socrata</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <!-- Load Leaflet, use newest version at http://leafletjs.com -->
+  <link rel="stylesheet" href="leaflet.css" />
+  <script src="leaflet.js"></script>
+
+  <!-- load jQuery, use newest version at https://code.jquery.com   -->
+  <script src="jquery-3.3.1.min.js" ></script>
+
+  <!-- style the map -->
+  <style>
+  body { margin:0; padding:0; }
+  #map { position: absolute; top:0; bottom:0; right:0; left:0; }
+
+.leaflet-popup-content-wrapper {
+    background:#fff;
+    color:#4a6689;
+    font-size:14px;
+    font-family: Proxima Nova, sans-serif;
+
+    }
+
+.leaflet-popup-content-wrapper a {
+  color:rgba(255,255,255,0.5);
+  }
+
+.leaflet-popup-tip-container {
+    width:100px;
+    height:20px;
+    }
+
+.leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    }
+
+
+  </style>
+</head>
+  </style>
+</head>
+<body>
+
+  <!-- insert the map -->
+  <div id="map"></div>
+
+  <script>
+  // set the map center and zoom level
+  var map = L.map('map').setView([38.9, -77.02], 12);
+
+  // add link to view code on GitHub
+  map.attributionControl
+  .setPrefix('View <a href="http://github.com/EDIT">code on GitHub</a> with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+
+  // add legend control layers - global variable with (null, null) allows indiv basemaps and overlays to be added inside functions below
+  var controlLayers = L.control.layers( null, null, {
+    position: "topright",
+    collapsed: false // false = open by default
+  }).addTo(map);
+
+
+
+  /* BASELAYERS */
+
+  var lightAll = new L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+  }).addTo(map); // adds layer by default
+  controlLayers.addBaseLayer(lightAll, 'Gray streets (Carto)');
+
+
+  var Mapbox_Light = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2ltb25lZGNwYyIsImEiOiJjajlqd2kybWkzejRoMzJsc243eXg1eXVkIn0.kwg7yTOTtMeTP0zeDPD2kA', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="http://mapbox.com">Mapbox</a>',     id: 'mapbox.light'
+  });
+    controlLayers.addBaseLayer(Mapbox_Light, 'Mapbox');
+
+  /* OVERLAYS */
+
+  // load open data from Socrata endpoint in GeoJSON format
+  // with simple marker styling: blue circles
+  // register your own Socrata app token at https://dev.socrata.com/register
+  // Connecticut School Directory, CT Open Data, https://data.ct.gov/resource/v4tt-nt9n
+  $.getJSON("es_chars_part2.geojson", function (data){
+    var geoJsonLayer = L.geoJson(data, {
+       style: function (feature) {
+         var fillColor,
+           level = feature.properties.in_boundary;
+           if (level == "Below 25th percentile") fillColor = "#4a6689";
+                 else fillColor = "#f7f7f7"; // no data
+                 return { color: "#c0c0c0", weight: 2, fillColor: fillColor, fillOpacity: .8, opacity: .8 }
+                      },
+                      onEachFeature: function(feature, layer) {
+                 				layer.bindPopup( "<strong>School: </strong>" + feature.properties.School2 + "<br/><strong>In-boundary participation rate: </strong>" + feature.properties.bound_partrate + "%");
+
+                 			}
+
+    }).addTo(map); // insert ".addTo(map)" to display layer by default
+    controlLayers.addOverlay(geoJsonLayer, 'Below 25th Percentile ');
+  });
+
+
+
+  $.getJSON("es_chars_part2.geojson", function (data){
+    var geoJsonLayer = L.geoJson(data, {
+       style: function (feature) {
+         var fillColor,
+           level = feature.properties.in_boundary;
+           if (level == "Above 75th percentile") fillColor = "#FED976";
+           else fillColor = "#f7f7f7"; // no data
+           return { color: "#7b7b7b", weight: 2, fillColor: fillColor, fillOpacity: .8, opacity: .8 }
+         },
+     			onEachFeature: function(feature, layer) {
+     				layer.bindPopup( "<strong>School: </strong>" + feature.properties.School2 + "<br/><strong>In-boundary participation rate: </strong>" + feature.properties.bound_partrate + "%");
+
+     			}
+
+              }); // insert ".addTo(map)" to display layer by default
+              controlLayers.addOverlay(geoJsonLayer, 'Above 75th Percentile');
+            });
+
+
+
+
+  </script>
+
+</body>
+</html>
