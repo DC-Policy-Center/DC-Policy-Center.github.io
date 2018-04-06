@@ -1,0 +1,19 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+  <link rel="stylesheet" href="part_rates.css">
+    </head>
+    <body>
+      <script src="part_rates.js"></script>
+      <h1>D.C. School Participation Rate by Grade Band</h1>
+
+      <div class="btn-group">
+        <button type="button" class="button button1" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='es_map.html';myFunctionE()">Elementary School</button>
+        <button type="button" class="button button2" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='ms_map.html';myFunctionM()">Middle School</button>
+        <button type="button" class="button button3" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='hs_map.html';myFunctionH()">High School</button>
+      </div>
+      <div id="myDIV"><h3>Elementary School Participation Rates</h3></div>
+    </body>
+<iframe id="myIframe" src="es_map.html" frameborder="0" marginwidth="0" marginheight="0" width="600" height="500"><meta charset="UTF-8"></iframe>
+</html>
