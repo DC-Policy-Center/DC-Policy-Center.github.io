@@ -1,0 +1,18 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="standout.css">
+  </head>
+  <body>
+    <script src="standout.js"></script>
+    <h1>DCPS School Neighborhoods that Stand Out</h1>
+    <div class="btn-group">
+      <button type="button" class="button button1" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='in_boundary.html';myFunctionPart()">Highest and Lowest In-Boundary Participation Rates</button>
+      <button type="button" class="button button2" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='draw.html';myFunctionDraw()">Schools that Draw More or Fewer Students than Expected</button>
+      <button type="button" class="button button3" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='aa_percent.html';myFunctionAa()">Schools that are More or Less African-American than the Neighborhood</button>
+    </div>
+    <div id="myDIV"><h3>Highest and Lowest In-Boundary Participation Rates</h3></div>
+  </body>
+<iframe id="myIframe" src="in_boundary.html" frameborder="0" marginwidth="0" marginheight="0" width="650" height="500"><meta charset="UTF-8"></iframe>
+</html>
