@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="https://DC-Policy-Center.github.io/assets/css/wordpress-post-styles/housing-profile.css">
+<link rel="stylesheet" type="text/css" href="https://DC-Policy-Center.github.io/assets/css/long-report-style-active.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#S1">About</a>
+    <a href="#S2">Services</a>
+    <a href="#S3">Clients</a>
+    <a href="#S4">Contact</a>
+  </div>
+</div>
+
+
+<nav>
+      <div id="navbar-2">
+          <ul class="nav page-menulist">
+              <li class="menuitem"><a><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span></a>
+              <li class="menuitem" style="display:none;"><a href="#section-1">Section 1</a></li>
+              <li class="menuitem" style="display:none;"><a href="#section-2">Section 2</a></li>
+              <li class="menuitem" style="display:none;" ><a href="#section-3">Section 3</a></li>
+              <li class="menuitem"><a href="#" class="dropdown-toggle" data-toggle="dropdown"<h4 id="info" class="text-info">Currently you are viewing - Section 1</h4></a></li>
+              <li class="menuitem" style="display:none;"><a href="#section-5">Section 5</a></li>
+          </ul>
+      </div>
+  </nav>
+
+<body data-spy="scroll" data-offset="0">
+  <div class="in-frame-content">
+          <h3 id="section-1">Section 1 </h3>
+  </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://DC-Policy-Center.github.io/assets/js/navbar2.js"></script>
+
+<script type="text/javascript">
+  $("body").scrollspy({
+      target: "nav",
+      offset: 70
+  })
+    $("body").scrollspy({target: "nav"});
+    $("nav").on("activate.bs.scrollspy", function () {
+        var currentItem = $(".nav li.active > a").text();
+        $("#info").empty().html("Currently you are viewing - " + currentItem);
+    });
+</script>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+}
+</script>
+</html>
