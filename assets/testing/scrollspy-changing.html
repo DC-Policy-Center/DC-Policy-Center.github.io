@@ -80,16 +80,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://DC-Policy-Center.github.io/assets/js/navbar2.js"></script>
-<script type="text/javascript">
-  $("body").scrollspy({
-      target: "nav",
-      offset: 70
-  })
-    $("body").scrollspy({target: "nav"});
-    $("nav").on("activate.bs.scrollspy", function () {
-        var currentItem = $(".nav li.active > a").text();
-        $("#info").empty().html("Currently you are viewing - " + currentItem);
-    });
-
-</script>
+<script src="../js/scrollspy.js"></script>
+<script src="../js/navOverlay.js"></script>
 </html>
