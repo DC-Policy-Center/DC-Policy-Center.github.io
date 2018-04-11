@@ -179,6 +179,12 @@ li.menuitem:hover .dropdown-content{
   h1 {
     font-size:1rem;
   }
+  #navbar-2 {
+    width: 100vw;
+  }
+  .overlay {
+    width:  100vw;
+  }
   .overlay a {font-size: 20px}
   .overlay .closebtn {
     font-size: 40px;
