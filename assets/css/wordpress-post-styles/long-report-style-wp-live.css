@@ -3,7 +3,7 @@ article {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin:2% 12% 2%;
 }
 
@@ -61,7 +61,7 @@ nav {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 #navbar-2 a:hover {
   background-color: #333333;
