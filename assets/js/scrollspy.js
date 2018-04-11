@@ -5,5 +5,5 @@ $("body").scrollspy({
   $("body").scrollspy({target: "nav"});
   $("nav").on("activate.bs.scrollspy", function () {
       var currentItem = $(".nav li.active > a").text();
-      $("#info").empty().html("Currently you are viewing - " + currentItem);
+      $("#info").empty().html(currentItem);
   });
