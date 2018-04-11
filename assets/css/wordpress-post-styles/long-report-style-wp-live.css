@@ -165,6 +165,9 @@ li.menuitem:hover .dropdown-content{
 #info {
   font-size: 40px;
 }
+#text-info {
+  pointer-events: none;
+}
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
