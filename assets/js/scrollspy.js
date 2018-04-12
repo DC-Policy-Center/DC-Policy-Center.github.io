@@ -6,5 +6,5 @@ $("body").scrollspy({
   $("nav").on("activate.bs.scrollspy", function () {
       var currentItem = $(".nav li.active > a").text();
       $("#info").empty().html(currentItem);
-      $.("#info").style.paddingLeft = "40%";
+      $("#info").style.paddingLeft = "40%";
   });
