@@ -42,11 +42,20 @@
 
     h1 {
       font-family: Proxima Nova, sans serif;
-      font-size: 30px;
+      font-size: 26px;
       color: #333;
     }
 
     h3 {
       font-family: Proxima Nova, sans serif;
             font-size: 20px;
+    }
+
+    .info {
+        background-color: #e7f3fe;
+        border-left: 6px solid #2196F3;
+    }
+
+    .warning {
+        border-left: 6px solid #ffeb3b;
     }
