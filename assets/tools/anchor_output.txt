@@ -1,0 +1,64 @@
+<a onclick="closeNav()" a href="#a1">I. Test 1</a>
+<a onclick="closeNav()" a href="#a1">I. Test 1</a>
+<a onclick="closeNav()" a href="#a2">II. Test 2</a>
+<a onclick="closeNav()" a href="#a3">III. Test 3</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#a4">III. i. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#a5">III. ii. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#a6">III. iii. Number and type of units</a>
+<a onclick="closeNav()" a href="#a7">IV. Test 4</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#a8">IV. i. Number and type of units</a>
+<a onclick="closeNav()" a href="#a9">V. Test 5</a>
+<a onclick="closeNav()" a href="#a10">VI. Test 6</a>
+<a onclick="closeNav()" a href="#_Toc511384833">I. INTRODUCTION: WHAT ARE PUBLIC SCHOOL ENROLLMENT PATTERNS IN THE DISTRICT, AND WHAT COULD EXPLAIN THEM?</a>
+<a onclick="closeNav()" a href="#_Toc511384833">I. INTRODUCTION: WHAT ARE PUBLIC SCHOOL ENROLLMENT PATTERNS IN THE DISTRICT, AND WHAT COULD EXPLAIN THEM?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384834">I. i. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384835">I. ii. Number and type of units</a>
+<a onclick="closeNav()" a href="#_Toc511384836">II. IS PUBLIC SCHOOL ENROLLMENT SYSTEMATICALLY DIFFERENT ACROSS DIFFERENT NEIGHBORHOODS?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384837">II. i. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384838">II. ii. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384839">II. iii. Number and type of units</a>
+<a onclick="closeNav()" a href="#_Toc511384840">III. CAN DIFFERENCES IN NEIGHBORHOOD CHARACTERISTICS EXPLAIN DIFFERENCES IN SCHOOL ENROLLMENT ACROSS THE CITY?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384841">III. i. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384842">III. i. Number and type of units</a>
+<a onclick="closeNav()" a href="#_Toc511384843">IV. CONCLUSIONS</a>
+<a onclick="closeNav()" a href="#_Toc511384844">V. ADDITIONAL FIGURES AND TABLES</a>
+<a onclick="closeNav()" a href="#_Toc511384848">VI. REFERENCES</a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#">. </a>
+<a onclick="closeNav()" a href="#_Toc511384833">I. INTRODUCTION: WHAT ARE PUBLIC SCHOOL ENROLLMENT PATTERNS IN THE DISTRICT, AND WHAT COULD EXPLAIN THEM?</a>
+<a onclick="closeNav()" a href="#_Toc511384833">I. INTRODUCTION: WHAT ARE PUBLIC SCHOOL ENROLLMENT PATTERNS IN THE DISTRICT, AND WHAT COULD EXPLAIN THEM?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384834">I. i. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384835">I. ii. Number and type of units</a>
+<a onclick="closeNav()" a href="#_Toc511384836">II. IS PUBLIC SCHOOL ENROLLMENT SYSTEMATICALLY DIFFERENT ACROSS DIFFERENT NEIGHBORHOODS?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384837">II. i. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384838">II. ii. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384839">II. iii. Number and type of units</a>
+<a onclick="closeNav()" a href="#_Toc511384840">III. CAN DIFFERENCES IN NEIGHBORHOOD CHARACTERISTICS EXPLAIN DIFFERENCES IN SCHOOL ENROLLMENT ACROSS THE CITY?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384841">III. i. Number and type of units</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384842">III. i. Number and type of units</a>
+<a onclick="closeNav()" a href="#_Toc511384843">IV. CONCLUSIONS</a>
+<a onclick="closeNav()" a href="#_Toc511384844">V. ADDITIONAL FIGURES AND TABLES</a>
+<a onclick="closeNav()" a href="#_Toc511384848">VI. REFERENCES</a>
+<a onclick="closeNav()" a href="#_Toc511384833">I. INTRODUCTION: WHAT ARE PUBLIC SCHOOL ENROLLMENT PATTERNS IN THE DISTRICT, AND WHAT COULD EXPLAIN THEM?</a>
+<a onclick="closeNav()" a href="#_Toc511384833">I. INTRODUCTION: WHAT ARE PUBLIC SCHOOL ENROLLMENT PATTERNS IN THE DISTRICT, AND WHAT COULD EXPLAIN THEM?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384834">I. i. Public school enrollment in D.C.</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384835">I. ii. Literature review</a>
+<a onclick="closeNav()" a href="#_Toc511384836">II. IS PUBLIC SCHOOL ENROLLMENT SYSTEMATICALLY DIFFERENT ACROSS DIFFERENT NEIGHBORHOODS?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384837">II. i. Data</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384838">II. ii. How does school participation vary across neighborhoods?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384839">II. iii. How do neighborhood characteristics vary across neighborhoods with high or low boundary participation?</a>
+<a onclick="closeNav()" a href="#_Toc511384840">III. CAN DIFFERENCES IN NEIGHBORHOOD CHARACTERISTICS EXPLAIN DIFFERENCES IN SCHOOL ENROLLMENT ACROSS THE CITY?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384841">III. i. Which neighborhood characteristics are the best indicators of boundary participation?</a>
+        <a style="padding_left:5%;" onclick="closeNav()"  href="#_Toc511384842">III. i. Which neighborhood characteristics are the best indicators of public charter school participation?</a>
+<a onclick="closeNav()" a href="#_Toc511384843">IV. CONCLUSIONS</a>
+<a onclick="closeNav()" a href="#_Toc511384844">V. ADDITIONAL FIGURES AND TABLES</a>
+<a onclick="closeNav()" a href="#_Toc511384848">VI. REFERENCES</a>

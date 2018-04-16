@@ -1,0 +1,14 @@
+<li class="menuitem" style="display:none;"><a href="#_Toc511384833">INTRODUCTION: WHAT ARE PUBLIC SCHOOL ENROLLMENT PATTERNS IN THE DISTRICT, AND WHAT COULD EXPLAIN THEM?</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384833">INTRODUCTION: WHAT ARE PUBLIC SCHOOL ENROLLMENT PATTERNS IN THE DISTRICT, AND WHAT COULD EXPLAIN THEM?</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384834">Public school enrollment in D.C.</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384835">Literature review</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384836">IS PUBLIC SCHOOL ENROLLMENT SYSTEMATICALLY DIFFERENT ACROSS DIFFERENT NEIGHBORHOODS?</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384837">Data</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384838">How does school participation vary across neighborhoods?</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384839">How do neighborhood characteristics vary across neighborhoods with high or low boundary participation?</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384840">CAN DIFFERENCES IN NEIGHBORHOOD CHARACTERISTICS EXPLAIN DIFFERENCES IN SCHOOL ENROLLMENT ACROSS THE CITY?</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384841">Which neighborhood characteristics are the best indicators of boundary participation?</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384842">Which neighborhood characteristics are the best indicators of public charter school participation?</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384843">CONCLUSIONS</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384844">ADDITIONAL FIGURES AND TABLES</a></li>
+<li class="menuitem" style="display:none;"><a href="#_Toc511384848">REFERENCES</a></li>
