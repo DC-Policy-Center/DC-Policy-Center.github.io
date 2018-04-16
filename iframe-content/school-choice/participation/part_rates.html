@@ -6,14 +6,23 @@
     </head>
     <body>
       <script src="part_rates.js"></script>
-      <title>D.C. Public School Boundary Participation Rates</title>
       <h1>D.C. School Participation Rate by Grade Band</h1>
+
+      <div class="info">
+<p><strong>Note: </strong> To select another grade band, click the buttons below.
+</p>
+</div>
+
 
       <div class="btn-group">
         <button type="button" class="button button1" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='es_map.html';myFunctionE()">Elementary School</button>
         <button type="button" class="button button2" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='ms_map.html';myFunctionM()">Middle School</button>
         <button type="button" class="button button3" onfocus="toggleFocus(this)" onblur="toggleOffFocus(this)" onClick="document.getElementById('myIframe').src='hs_map.html';myFunctionH()">High School</button>
       </div>
+      <div class="warning">
+        <p><strong></strong>&nbsp;&nbsp;The Wilson High School boundary is outlined in yellow.
+      </div>
+
       <div id="myDIV"><h3>Elementary School Participation Rates</h3></div>
     </body>
 <iframe id="myIframe" src="es_map.html" frameborder="0" marginwidth="0" marginheight="0" width="600" height="500"><meta charset="UTF-8"></iframe>
