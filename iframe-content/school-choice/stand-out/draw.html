@@ -71,9 +71,9 @@
   // set the map center and zoom level
   var map = L.map('map').setView([38.9, -77.02], 11);
 
-  // add link to view code on GitHub
+  // add link to view code on GitHub?
   map.attributionControl
-  .setPrefix('Made with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+  .setPrefix('<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 
   // add legend control layers - global variable with (null, null) allows indiv basemaps and overlays to be added inside functions below
   var controlLayers = L.control.layers( null, null, {
@@ -84,7 +84,7 @@
   /* BASELAYERS */
 
   var lightAll = new L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
   }).addTo(map); // adds layer by default
   /*   controlLayers.addBaseLayer(lightAll, 'Carto');*/
 
