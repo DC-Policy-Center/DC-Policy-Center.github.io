@@ -44,3 +44,8 @@ h3 {
   font-family: Proxima Nova, sans serif;
         font-size: 18px;
 }
+
+iframe {
+      width:100%;
+      height:600px;
+  }
