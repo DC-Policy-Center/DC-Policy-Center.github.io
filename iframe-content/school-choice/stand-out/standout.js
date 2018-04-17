@@ -18,8 +18,8 @@ function myFunctionDraw() {
 
 function myFunctionAa() {
   var x = document.getElementById("myDIV");
-  if (x.innerHTML != "Schools that are More or Less African-American than the Neighborhood") {
-    x.innerHTML = "<h3>Schools that are More or Less African-American than the Neighborhood</h3>";
+  if (x.innerHTML != "Schools that are More or Less African American than the Neighborhood") {
+    x.innerHTML = "<h3>Schools that are More or Less African American than the Neighborhood</h3>";
   } else {
     x.innerHTML = " ";
   }
