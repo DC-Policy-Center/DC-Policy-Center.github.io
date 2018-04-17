@@ -58,3 +58,8 @@
     .warning {
         border-left: 6px solid #ffeb3b;
     }
+
+    iframe {
+      width:100%;
+      height:500px;
+  }
