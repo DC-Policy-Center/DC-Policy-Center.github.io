@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>D.C. Speed Cameras</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet-src.js"></script>
+
+<script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<style>
+.leaflet-popup-content {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.leaflet-popup-content-wrapper {
+    background:#fff;
+    color:#000000;
+    font-size:14px;
+    font-family: Proxima Nova, sans-serif;
+    }
+
+.leaflet-popup-content-wrapper a {
+    color:rgba(255,255,255,0.5);
+    }
+
+.leaflet-popup-tip-container {
+    width:100px;
+    height:20px;
+    }
+
+.leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    }
+
+.leaflet-control-layers {
+    font-family: Proxima Nova, sans-serif;
+    font-size:14px;
+    }
+</style>
+</head>
+<body>
+    <div id="map" style="width: 600px; height: 600px"></div>
+
+    <script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+
+		<script src="speed-involved-crashes.js"></script>
+
+    <script>
+        var map = L.map('map').setView([38.9, -77.02], 11);
+
+        var controlLayers = L.control.layers( null, null, {
+          position: "topright",
+          collapsed: false // false = open by default
+        }).addTo(map);
+
+
+        /* Baselayers */
+
+        var lightAll = new L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+        }).addTo(map); // adds layer by default
+        controlLayers.addBaseLayer(lightAll, 'Carto Light', {collapsed:false});
+
+
+        var darkAll = new L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+        });
+        controlLayers.addBaseLayer(darkAll, 'Carto Dark', {collapsed:false});
+
+
+
+        var heat = L.heatLayer(crashPoints,{
+            radius: 11,
+            blur: 5,
+            maxZoom: 17,
+            //gradient: {0.1: '#440154', 0.4: '#453781', 0.65: '#55C667', 1: '#FDE725'}
+          //  gradient: {0.1: 'blue', 0.4: 'purple', 0.65: 'pink', 1: 'yellow'}
+          gradient: {0.1: 'blue',  0.45: '#67ff00', 0.65: '#fdff00',.9: '#ff0027'}
+        }).addTo(map);
+
+
+        $.getJSON("speed_cameras.geojson", function (data){
+          var cameraFines = L.geoJson(data, {
+            pointToLayer: function( feature, latlng) {
+              var circle = L.circleMarker(latlng, {
+                radius: Math.sqrt(feature.properties.Fine_Total) * .005 ,
+                fillColor: "#1dacd6",
+                color: "#1dacd6",
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.7
+              });
+              circle.bindPopup('<strong>Camera: </strong>' + feature.properties.location2 +
+              '</br><strong>Fine Total:</strong> ' + feature.properties.fine_dollar_amount);
+
+              return circle;
+            }
+
+          }); // insert ".addTo(map)" to display layer by default
+          controlLayers.addOverlay(cameraFines, 'Speed Cameras (Fines)', {collapsed:false});
+        });
+
+        $.getJSON("speed_cameras.geojson", function (data){
+          var camerasAll = L.geoJson(data, {
+            pointToLayer: function( feature, latlng) {
+              var circle = L.circleMarker(latlng, {
+                radius: 3,
+                fillColor: "#1dacd6",
+                color: "#1dacd6",
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.7
+              });
+              circle.bindPopup('<strong>Camera: </strong>' + feature.properties.location2 +
+              '</br><strong>Fine Total:</strong> ' + feature.properties.fine_dollar_amount);
+
+              return circle;
+            }
+
+          });
+          controlLayers.addOverlay(camerasAll, 'Speed Cameras', {collapsed:false});
+        });
+
+
+        //logo position
+        var logo = L.control({position: 'bottomleft'});
+        logo.onAdd = function(map){
+            var div = L.DomUtil.create('div', 'myclass');
+            div.innerHTML= "<img src='dcpc_75pct.png'/>";
+            return div;
+        }
+        logo.addTo(map);
+
+    </script>
+</body>
+</html>
