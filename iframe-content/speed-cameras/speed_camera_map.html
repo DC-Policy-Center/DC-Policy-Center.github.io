@@ -5,46 +5,52 @@
 <title>D.C. Speed Cameras</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet-src.js"></script>
-
-<script
-src="https://code.jquery.com/jquery-3.1.1.min.js"
-integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-crossorigin="anonymous"></script>
+<link rel="stylesheet" href="leaflet.css" />
+<script src="leaflet-src.js"></script>
+<script src="jquery-3.1.1.min.js"></script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
 <style>
+h1 {
+    color:#000000;
+    font-size:28px;
+    font-family: Proxima Nova, sans-serif;
+    }
+h3 {
+    color:#000000;
+    font-size:16px;
+    font-family: Proxima Nova, sans-serif;
+    }
+p {
+        color:#000000;
+        font-size:14px;
+        font-family: Proxima Nova, sans-serif;
+        }
 .leaflet-popup-content {
     max-width: 200px;
     max-height: 200px;
 }
-
 .leaflet-popup-content-wrapper {
     background:#fff;
     color:#000000;
     font-size:14px;
     font-family: Proxima Nova, sans-serif;
     }
-
 .leaflet-popup-content-wrapper a {
     color:rgba(255,255,255,0.5);
     }
-
 .leaflet-popup-tip-container {
     width:100px;
     height:20px;
     }
-
 .leaflet-popup-tip {
     background: transparent;
     border: none;
     box-shadow: none;
     }
-
 .leaflet-control-layers {
     font-family: Proxima Nova, sans-serif;
     font-size:14px;
@@ -52,9 +58,13 @@ crossorigin="anonymous"></script>
 </style>
 </head>
 <body>
-    <div id="map" style="width: 600px; height: 600px"></div>
+  <h1>Map of D.C. Speed-Related Crashes and Speed Camera Locations</h1>
+  <h3>Brighter areas of the map represent higher concentrations of speed-related crashes</h3>
+  <p>The "Speed Camera (Fines)" layer contains speed cameras with a circle size proportional to </br>the FY2017 fine total - click the circle to view details.</p>
 
-    <script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+      <div id="map" style="width: 600px; height: 600px"></div>
+
+    <script src="leaflet-heat.js"></script>
 
 		<script src="speed-involved-crashes.js"></script>
 
@@ -145,5 +155,8 @@ crossorigin="anonymous"></script>
         logo.addTo(map);
 
     </script>
-</body>
-</html>
+    <p>Source: <a href="http://opendata.dc.gov/datasets/crashes-in-dc">Speed-Related Crash data</a> and
+      <a href="http://opendata.dc.gov/datasets/camera-enforcement-locations">Speed Camera Location</a> data from D.C. Open Data</br>
+      Speed camera data courtesy of a FOIA request by <a href="https://www.bizjournals.com/washington/news/2017/12/04/district-sees-soaring-revenue-from-speed-cameras-a.html">Andy Medici</a></p>
+    </body>
+    </html>
