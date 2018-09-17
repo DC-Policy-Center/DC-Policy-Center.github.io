@@ -1,0 +1,23 @@
+<li class="menuitem" style="display:none;"><a href="#One">Growth in population is largely from Millennials</a></li>
+<li class="menuitem" style="display:none;"><a href="#One">Growth in population is largely from Millennials</a></li>
+<li class="menuitem" style="display:none;"><a href="#One-one">D.C.'s growing Millennial population</a></li>
+<li class="menuitem" style="display:none;"><a href="#One-two">D.C.'s population aged 20 to 34 has changed from 200 to 2016</a></li>
+<li class="menuitem" style="display:none;"><a href="#One-three">Summary</a></li>
+<li class="menuitem" style="display:none;"><a href="#Two">Impact on public schools from more families</a></li>
+<li class="menuitem" style="display:none;"><a href="#Two-one">More children attend public school as the school-age population increases</a></li>
+<li class="menuitem" style="display:none;"><a href="#Two-two">More children attend pulbic schools as a share of school-age pupulation </a></li>
+<li class="menuitem" style="display:none;"><a href="#Two-three">Summary</a></li>
+<li class="menuitem" style="display:none;"><a href="#Three">Changes in future publics chool enrollment</a></li>
+<li class="menuitem" style="display:none;"><a href="#Three-one">Five-year enrollment estimates</a></li>
+<li class="menuitem" style="display:none;"><a href="#Three-two">Ten-year enrollment estimates</a></li>
+<li class="menuitem" style="display:none;"><a href="#Three-three">Summary</a></li>
+<li class="menuitem" style="display:none;"><a href="#Four">Where is the school-age population likely to live?</a></li>
+<li class="menuitem" style="display:none;"><a href="#Four-one">Population forcasts and the school-aged population</a></li>
+<li class="menuitem" style="display:none;"><a href="#Four-two">Housing prices and the school-age population</a></li>
+<li class="menuitem" style="display:none;"><a href="#Four-three">Summary</a></li>
+<li class="menuitem" style="display:none;"><a href="#Five">What could limit future public school enrollment?</a></li>
+<li class="menuitem" style="display:none;"><a href="#Five-one">Housing prices are high</a></li>
+<li class="menuitem" style="display:none;"><a href="#Five-two">Enrollment growth in upper grades has been slow</a></li>
+<li class="menuitem" style="display:none;"><a href="#Six">Conclusions</a></li>
+<li class="menuitem" style="display:none;"><a href="#ap-i ">Additional figures and tables</a></li>
+<li class="menuitem" style="display:none;"><a href="#ap-ii">Methodology</a></li>

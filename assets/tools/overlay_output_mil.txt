@@ -1,0 +1,23 @@
+<a onclick="closeNav()" a href="#One">I. Growth in population is largely from Millennials</a>
+<a onclick="closeNav()" a href="#One">I. Growth in population is largely from Millennials</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-one">I. i. D.C.'s growing Millennial population</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-two">I. ii. D.C.'s population aged 20 to 34 has changed from 200 to 2016</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-three">I. iii. Summary</a>
+<a onclick="closeNav()" a href="#Two">II. Impact on public schools from more families</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Two-one">II. i. More children attend public school as the school-age population increases</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Two-two">II. ii. More children attend pulbic schools as a share of school-age pupulation </a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Two-three">II. iii. Summary</a>
+<a onclick="closeNav()" a href="#Three">III. Changes in future publics chool enrollment</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Three-one">III. i. Five-year enrollment estimates</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Three-two">III. ii. Ten-year enrollment estimates</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Three-three">III. iii. Summary</a>
+<a onclick="closeNav()" a href="#Four">IV. Where is the school-age population likely to live?</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Four-one">IV. i. Population forcasts and the school-aged population</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Four-two">IV. ii. Housing prices and the school-age population</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Four-three">IV. iii. Summary</a>
+<a onclick="closeNav()" a href="#Five">V. What could limit future public school enrollment?</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Five-one">V. i. Housing prices are high</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Five-two">V. ii. Enrollment growth in upper grades has been slow</a>
+<a onclick="closeNav()" a href="#Six">VI. Conclusions</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#ap-i ">Appendix. I . Additional figures and tables</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#ap-ii">Appendix. II. Methodology</a>

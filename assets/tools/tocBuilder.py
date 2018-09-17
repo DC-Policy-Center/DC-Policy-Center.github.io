@@ -1,6 +1,6 @@
 import csv
 
-csv_file = "education_toc.csv"
+csv_file = "epi-millennial-report.csv"
 with open(csv_file) as input_file:
     file_reader = csv.reader(input_file)
     input_data = []
@@ -25,14 +25,14 @@ for line_index in range(len(input_data)):
 
     menu_bar_line = "<li class=\"menuitem\" style=\"display:none;\"><a href=\"#%s\">%s</a></li>\n"%(anchor,text)
 
-    with open("anchor_output.txt","a",encoding='utf-8') as overlay_output:
+    with open("anchor_output_mil.txt","a",encoding='utf-8') as overlay_output:
         overlay_output.write(overlay_line)
     overlay_output.close()
 
-    with open("menu_bar_output.txt","a",encoding='utf-8') as menu_bar_output:
+    with open("menu_bar_output_mil.txt","a",encoding='utf-8') as menu_bar_output:
         menu_bar_output.write(menu_bar_line)
     menu_bar_output.close()
 
-    with open("overlay_output.txt","a",encoding='utf-8') as overlay_output:
+    with open("overlay_output_mil.txt","a",encoding='utf-8') as overlay_output:
         overlay_output.write(overlay_line)
     overlay_output.close()
