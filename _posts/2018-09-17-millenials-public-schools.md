@@ -8,9 +8,9 @@ date: 2018-9-17
 permalink: /posts/millennials-public-schools/
 ---
 
-This is the methodology and data write up of the publication "Will children of current millennials become future public school students" found [here](https://www.dcpolicycenter.org/publications/future-public-school-students-report).
+This is the methodology and data write up of the publication "Will Children of Current Millennials Become Future Public School Students?" found [here](https://www.dcpolicycenter.org/publications/future-public-school-students-report).
 
-The data can be found <a href="../../assets/data-resources/millennials-public-school-enrollment-select-datasets.xlsx">here</a>.
+The data can be found <a href="https://DC-Policy-Center.github.io/assets/data-resources/Millennials-public-school-enrollment-select-datasets.xlsx">here</a>.
 
 # Methodology
 
@@ -49,7 +49,10 @@ Next, we use this information to make assumptions about the extent to which D.C.
 
 ## 3. Where are Millennials with children likely to live?
 
+
 First, we look at D.C.’s Office of Planning population forecasts. This shows areas of the city with a school-age population that is likely to grow as a reference.
+
+
 Next, we combine information on Millennials’ income with housing data to identify areas of the District that where Millennials with families would be able to buy a home. To estimate which properties families can buy, we first calculate household income at the median and 75th percentiles for Millennial individuals without children. We combine income data with a housing dataset compiled for the D.C. Policy Center’s report, Taking Stock of the District’s Housing Stock (Sayin Taylor, 2018) to connect to data on capacity and income necessary to afford a home. We use the number of bedrooms to calculate capacity for all single-family homes using the Taking Stock methodology. We assume that each bedroom can comfortably accommodate 1.5 persons, rounded up to the next whole. For example, a one-bedroom can hold two persons, and a two-bedroom can hold three. We exclude single-family units listed with more than one unit (21 units out of 93,255) for simplicity, and an additional 58 units where data on the number of bed-rooms were missing. We focus on single-family houses with a capacity of four to accommodate a family.
 
 
