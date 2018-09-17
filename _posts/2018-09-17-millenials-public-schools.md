@@ -32,7 +32,7 @@ We then examine if these characteristics differ statistically for members of the
 We first establish the extent to which families have historically stayed in the District on a net basis using cohort change ratios,  calculated as the number of children in D.C.’s public schools divided by the number of births to mothers living in D.C. the relevant number of years in the past. This is a net measure, and does not track individuals or separate in- and out-migration, nor movement to private schools. We focus on ages and “gateway grades” that allow for transition into school or the next grade band: kindergarten (age 5), grade 5 (age 10), grade 8 (age 13), and grade 12 (age 17). We follow the cohort born in 1998 in D.C. through high school in school year 2015-16 to see how many are living in D.C. and attending public schools in each gateway grade (see Table 1 below for calculations of the 1998 cohort). Using 1998 as a birth year for this cohort simulates how the children of the Millennials’ counterparts living in D.C. around the year 2000 stayed in the District’s schools. It also allows us to follow the cohort through high school and compare to ACS population estimates. We follow up with cohorts every three years (born in 2001, 2004, 2007, and 2010) to see any changes over time. We also compare the 1998 cohort change ratios to those in similar cities that have a high degree of public school choice (Campbell, Heyward, & Gross, 2017), rapidly growing populations, and consistent city borders: Boston, Denver, New Orleans, and Oakland.  Finally, we compare cohort changes over time by race and ethnicity.
 
 
-Table 1. Calculations of cohort change ratios
+
 <img src="https://dc-policy-center.github.io/assets/images/post_images/millennial-epi/method-table-1-epimr.png">
 
 Sources: Office of the State Superintendent for Education (OSSE)’s enrollment audits, U.S. Department of Education National Center for Education Statistics (NCES), and the Center for Disease Control (CDC), WONDER database.
@@ -41,7 +41,6 @@ Sources: Office of the State Superintendent for Education (OSSE)’s enrollment 
 To see whether these patterns are changing, we calculate cohort transition ratios for transitions between gateway grades in recent years (2015, 2016, and 2017) and in 1998. For example, we calculate how many students are in grade 12 in 2015 compared to students in grade 8 four years earlier (see Table 2 below for calculations).
 
 
-Table 2. Calculation of cohort transition ratios (2015 example)
 <img src="https://dc-policy-center.github.io/assets/images/post_images/millennial-epi/method-table-2-epimr.png">
 
 
