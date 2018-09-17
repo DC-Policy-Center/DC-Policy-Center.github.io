@@ -34,6 +34,7 @@ We first establish the extent to which families have historically stayed in the 
 
 Table 1. Calculations of cohort change ratios
 <img src="https://dc-policy-center.github.io/assets/images/post_images/millennial-epi/method-table-1-epimr.png">
+
 Sources: Office of the State Superintendent for Education (OSSE)’s enrollment audits, U.S. Department of Education National Center for Education Statistics (NCES), and the Center for Disease Control (CDC), WONDER database.
 
 
@@ -41,7 +42,7 @@ To see whether these patterns are changing, we calculate cohort transition ratio
 
 
 Table 2. Calculation of cohort transition ratios (2015 example)
-<img src="https://dc-policy-center.github.io/assets/images/post_images/millennial-epi/method-table-2-epimr.png>
+<img src="https://dc-policy-center.github.io/assets/images/post_images/millennial-epi/method-table-2-epimr.png">
 
 
 Next, we use this information to make assumptions about the extent to which D.C.’s public school enrollment will continue to grow. We produce three five- and ten-year estimates of public school enrollment growth in key gateway grades based on births in 2016. First, we will assume that families will stay in public schools at the same rates that they did historically, using cohort transition ratios of those born in 1998. Second, we will assume that families will stay in D.C. based on the average of cohort transition ratios in the three most recent years. Third, we will assume that the rate at which families stay in D.C. continues to increase by the same amount that it has between 1998 and the three most recent years. We estimate growth by grade for the relevant future year based on births or current enrollment (estimates for 2021-22 inform the 2026-27 estimates). Growth is then annualized and calculated for school years 2021-22 and 2026-27. Finally, growth for one grade is extrapolated to the full grade band to estimate total growth.
