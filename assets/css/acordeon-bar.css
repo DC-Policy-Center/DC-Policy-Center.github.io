@@ -1,0 +1,42 @@
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #527394;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .035s;
+  -o-transition: max-height .035s;
+   transition: max-height .035s;
+}
+.tab-content p {
+  margin: 1em;
+}
+.tab-content ul, li {
+  margin: 1em;
+color:black;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 1000vh;
+ border: 5px #E8272C;
+  border-bottom-style: solid;
+}
