@@ -8,7 +8,7 @@ date: 2018-12-17
 permalink: /posts/landscape-of-diversity/
 ---
 
-This is the methodology and data write up of the publication “Landscape of Diversity in D.C. Public Schools” found [here](https://www.dcpolicycenter.org/publications/future-public-school-students-report).
+This is the methodology and data write up of the publication “Landscape of Diversity in D.C. Public Schools” found [here](#).
 
 The data can be found <a href="https://DC-Policy-Center.github.io/assets/data-resources/landscape-diversity-data.xlsx">here</a>.
 
