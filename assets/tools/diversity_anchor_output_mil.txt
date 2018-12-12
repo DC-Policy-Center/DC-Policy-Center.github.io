@@ -1,0 +1,20 @@
+<a onclick="closeNav()" a href="#One">I. POTENTIAL FOR DIVERSITY</a>
+<a onclick="closeNav()" a href="#One">I. POTENTIAL FOR DIVERSITY</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-one">I. i. History of segregation in D.C.'s public schools</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-two">I. ii. Characteristics of D.C.'s public school students</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-three">I. iii. Neighborhood demographics</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-four">I. iv. Measuring diversity</a>
+<a onclick="closeNav()" a href="#Two">II. RACIAL AND ETHNIC DIVERSITY</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Two-one">II. i. Characteristics of racially and ethnically diverse schools</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Two-two">II. ii. Changes in racial an dethnic diversity</a>
+<a onclick="closeNav()" a href="#Three">III. ECONOMIC DIVERSITY</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Three-one">III. i. Characteristics of economically diverse schools</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Three-two">III. ii. Changes in economic diversity</a>
+<a onclick="closeNav()" a href="#Four">IV. OVERLAP IN DIVERSITY BY TYPE</a>
+<a onclick="closeNav()" a href="#Five">V. CONCLUSIONS</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Five-one">V. i. Implications</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#ap-i">Appendix. I . ADDITIONAL FIGURES AND TABLES</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#ap-ii">Appendix. II. METHODOLOGY</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#ap-ii-i">Appendix. II-i. Measuring racial and ethnic representation</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#ap-ii-ii">Appendix. II-ii. Measuring economic representation</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#ap-iii">Appendix. III. REFERENCES</a>
