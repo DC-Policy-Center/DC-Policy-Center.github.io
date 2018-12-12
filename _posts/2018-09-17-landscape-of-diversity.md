@@ -1,16 +1,16 @@
 ---
 layout: auto-post
 title:  Landscape of Diversity in D.C. Public Schools
-description: methodology and data
+description:
 author: Chelsea Coffin
 author_url: https://www.dcpolicycenter.org/people/chelsea-coffin/
-date: 2018-12-12
+date: 2018-12-17
 permalink: /posts/landscape-of-diversity/
 ---
 
-This is the methodology and data write up of the publication "Will Children of Current Millennials Become Future Public School Students?" found [here](https://www.dcpolicycenter.org/publications/future-public-school-students-report).
+This is the methodology and data write up of the publication “Landscape of Diversity in D.C. Public Schools” found [here](https://www.dcpolicycenter.org/publications/future-public-school-students-report).
 
-The data can be found <a href="https://DC-Policy-Center.github.io/assets/data-resources/Millennials-public-school-enrollment-select-datasets.xlsx">here</a>.
+The data can be found <a href="https://DC-Policy-Center.github.io/assets/data-resources/landscape-diversity-data.xlsx">here</a>.
 
 # Methodology
 
@@ -28,21 +28,38 @@ The data can be found <a href="https://DC-Policy-Center.github.io/assets/data-re
 
 **Methodology Figure 1** highlights a few examples. A school where the majority of students (white students in the figure below) holds 60 percent of the student body would have a diversity score of 40 percent, or the sum of other groups, and be the most diverse out of the examples below. A school that is most representative of D.C.’s students overall would have a diversity score around 30 percent, as most public school students are African American. A school with only one group (likely African American students), which reflects half of D.C.’s public schools, would be the least diverse of these three examples.
 
-**METHODOLOGY FIGURE 1. EXAMPLES OF RACIAL AND ETHNIC DIVERSITY SCORES**
+<div style="text-align: center;">
 
-<img src="https://dc-policy-center.github.io/assets/images/post_images/assets/images/post_images/landscape-diversity/Fig-1.png">
+<strong>METHODOLOGY FIGURE 1. EXAMPLES OF RACIAL AND ETHNIC DIVERSITY SCORES</strong>
+<img src="https://dc-policy-center.github.io/assets/images/post_images/landscape-diversity/Fig-1.png">
+
+</div>
 
 # Measuring economic representation
-**To measure economic diversity, the analysis identifies whether students who are at-risk or not at-risk have a plurality, and uses the percentage of students in the other group as a score of economic diversity.** In D.C., almost half (47 percent) of pre-kindergarten through grade 12 students are identified as at-risk. The percentage of students who are at-risk  is a better metric than economically disadvantaged students (or the percentage of students receiving free or reduced price lunch) in D.C. given data complications. In D.C., almost three-quarters of schools meet the requirements for the Community Eligibility Provision that provides all students with free lunches without submitting FARM applications. This means that data on economic disadvantage are limited. The economic diversity score has a maximum value of 47 percent if each group was represented at every school exactly as they are in the student body, and a minimum value of zero. However, individual schools can have a score of up to 50 percent if groups are evenly distributed at the school level.
+**To measure economic diversity, the analysis identifies whether students who are at-risk or not at-risk have a plurality, and uses the percentage of students in the other group as a score of economic diversity.** In D.C., almost half (47 percent) of pre-kindergarten through grade 12 students are identified as at-risk. The percentage of students who are at-risk<sup><a href="#1">1</a></sup>  is a better metric than economically disadvantaged students (or the percentage of students receiving free or reduced price lunch) in D.C. given data complications. In D.C., almost three-quarters of schools meet the requirements for the Community Eligibility Provision that provides all students with free lunches without submitting FARM applications. This means that data on economic disadvantage are limited. The economic diversity score has a maximum value of 47 percent if each group was represented at every school exactly as they are in the student body, and a minimum value of zero. However, individual schools can have a score of up to 50 percent if groups are evenly distributed at the school level.
 
 **The greater the economic diversity score, the more economic diversity at a particular school.** Methodology Figure 2 shows examples of economic diversity. Schools with an economic diversity score of 50 percent will be the most diverse, as these schools will have the most parity between students who are at-risk and those who are not at-risk. A school with a plurality of at-risk students at 60 percent would be the next most diverse at 40 percent. A school with a high concentration of at-risk would be less diverse with a score of 10 percent.
 
-**METHODOLOGY FIGURE 2. EXAMPLES OF ECONOMIC DIVERSITY SCORES**
-<img src="https://dc-policy-center.github.io/assets/images/post_images/assets/images/post_images/landscape-diversity/Fig-2.png">
+<div style="text-align: center;">
+
+<strong>METHODOLOGY FIGURE 2. EXAMPLES OF ECONOMIC DIVERSITY SCORES</strong>
+<img src="https://dc-policy-center.github.io/assets/images/post_images/landscape-diversity/Fig-2.png">
+
+</div>
 
 # Identifying diverse schools and their attributes
 
 **Once we have measures of racial and ethnic diversity and economic diversity, we will identify which schools are the most diverse and which characteristics they share.** The most diverse schools will have distributions that represent student groups more equally, and the highest diversity scores as defined by the 75th percentile. We will then perform statistical tests of significance between the group of the most diverse schools and other schools to see if they are different across various school characteristics (separately in terms of race and ethnicity, and at-risk population). Specifically, we will use Welch’s t-tests for samples with unequal variances and sample sizes. We are interested in school characteristics related to location, sector, enrollment, program offerings, proximity to transit, grade band, boundary participation distribution of students by ward (see Methodology Table 1 for data sources on school characteristics). We will combine data from local education agencies (OSSE, DCPS, PCSB) to conduct this analysis.
 
-**METHODOLOGY TABLE 1. SCHOOL CHARACTERISTICS DATA SOURCES, 2016-17**
-<img src="https://dc-policy-center.github.io/assets/images/post_images/assets/images/post_images/landscape-diversity/Table-1.png">
+<div style="text-align: center;">
+
+<strong>METHODOLOGY TABLE 1. SCHOOL CHARACTERISTICS DATA SOURCES, 2016-17</strong>
+<img src="https://dc-policy-center.github.io/assets/images/post_images/landscape-diversity/Table-1.png">
+
+</div>
+
+
+-----
+<div id = "1">
+<sup>1</sup> In D.C., pre-kindergarten through grade 12 students are considered to be at-risk if they receive TANF or SNAP benefits, are homeless, are involved with the foster care system, or over-age.
+</div>
