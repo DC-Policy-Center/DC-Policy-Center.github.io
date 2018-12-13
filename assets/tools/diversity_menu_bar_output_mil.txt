@@ -2,11 +2,14 @@
 <li class="menuitem" style="display:none;"><a href="#One">POTENTIAL FOR DIVERSITY</a></li>
 <li class="menuitem" style="display:none;"><a href="#One-one">History of segregation in D.C.'s public schools</a></li>
 <li class="menuitem" style="display:none;"><a href="#One-two">Characteristics of D.C.'s public school students</a></li>
-<li class="menuitem" style="display:none;"><a href="#One-three">Neighborhood demographics</a></li>
-<li class="menuitem" style="display:none;"><a href="#One-four">Measuring diversity</a></li>
+<li class="menuitem" style="display:none;"><a href="#One-three">School demographics</a></li>
+<li class="menuitem" style="display:none;"><a href="#One-four">Neighborhood demographics</a></li>
+<li class="menuitem" style="display:none;"><a href="#One-five">Measuring diversity</a></li>
+<li class="menuitem" style="display:none;"><a href="#One-six">Racial and ethnic diversity scores</a></li>
+<li class="menuitem" style="display:none;"><a href="#One-seven">Economic diversity scores</a></li>
 <li class="menuitem" style="display:none;"><a href="#Two">RACIAL AND ETHNIC DIVERSITY</a></li>
 <li class="menuitem" style="display:none;"><a href="#Two-one">Characteristics of racially and ethnically diverse schools</a></li>
-<li class="menuitem" style="display:none;"><a href="#Two-two">Changes in racial an dethnic diversity</a></li>
+<li class="menuitem" style="display:none;"><a href="#Two-two">Changes in racial and ethnic diversity</a></li>
 <li class="menuitem" style="display:none;"><a href="#Three">ECONOMIC DIVERSITY</a></li>
 <li class="menuitem" style="display:none;"><a href="#Three-one">Characteristics of economically diverse schools</a></li>
 <li class="menuitem" style="display:none;"><a href="#Three-two">Changes in economic diversity</a></li>

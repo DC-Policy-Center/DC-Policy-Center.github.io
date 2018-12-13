@@ -2,11 +2,14 @@
 <a onclick="closeNav()" a href="#One">I. POTENTIAL FOR DIVERSITY</a>
         <a style="padding-left:5%;" onclick="closeNav()"  href="#One-one">I. i. History of segregation in D.C.'s public schools</a>
         <a style="padding-left:5%;" onclick="closeNav()"  href="#One-two">I. ii. Characteristics of D.C.'s public school students</a>
-        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-three">I. iii. Neighborhood demographics</a>
-        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-four">I. iv. Measuring diversity</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-three">I. iii. School demographics</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-four">I. iv. Neighborhood demographics</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-five">I. v. Measuring diversity</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-six">I. vi. Racial and ethnic diversity scores</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#One-seven">I. vii. Economic diversity scores</a>
 <a onclick="closeNav()" a href="#Two">II. RACIAL AND ETHNIC DIVERSITY</a>
         <a style="padding-left:5%;" onclick="closeNav()"  href="#Two-one">II. i. Characteristics of racially and ethnically diverse schools</a>
-        <a style="padding-left:5%;" onclick="closeNav()"  href="#Two-two">II. ii. Changes in racial an dethnic diversity</a>
+        <a style="padding-left:5%;" onclick="closeNav()"  href="#Two-two">II. ii. Changes in racial and ethnic diversity</a>
 <a onclick="closeNav()" a href="#Three">III. ECONOMIC DIVERSITY</a>
         <a style="padding-left:5%;" onclick="closeNav()"  href="#Three-one">III. i. Characteristics of economically diverse schools</a>
         <a style="padding-left:5%;" onclick="closeNav()"  href="#Three-two">III. ii. Changes in economic diversity</a>
