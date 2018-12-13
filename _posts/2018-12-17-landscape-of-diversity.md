@@ -4,11 +4,11 @@ title:  Landscape of Diversity in D.C. Public Schools
 description:
 author: Chelsea Coffin
 author_url: https://www.dcpolicycenter.org/people/chelsea-coffin/
-date: 2018-12-12
+date: 2018-12-17
 permalink: /posts/landscape-of-diversity/
 ---
 
-This is the methodology and data write up of the publication “Landscape of Diversity in D.C. Public Schools” found [here](#).
+This is the methodology and data write up of the publication “Landscape of Diversity in D.C. Public Schools” found [here](https://www.dcpolicycenter.org/publications/landscape-of-diversity-in-dc-public-schools).
 
 The data can be found <a href="https://DC-Policy-Center.github.io/assets/data-resources/landscape-diversity-data.xlsx">here</a>.
 
