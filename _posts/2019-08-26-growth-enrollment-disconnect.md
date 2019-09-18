@@ -12,7 +12,8 @@ This is the methodology and data write up of the publication “D.C.’s Disconn
 <strong>here</strong></a>.
 
 The data can be found here:
-<a href="https://dc-policy-center.github.io/assets/data-resources/enrollment-neighborhood-change-data.xlsx"><strong>[enrollment-neighborhood-change-data.xlsx]</strong></a>.
+<a href="https://data.dcpolicycenter.org/assets/data-resources/enrollment-neighborhood-change-data.xlsx"><strong>[enrollment-neighborhood-change-data.xlsx]</strong></a>.
+C:\Users\mwatson\documents\github\dc-policy-center.github.io\assets\data-resources\enrollment-neigbhorhood-change-data.xlsx
 
 ## Methodology
 This report examines D.C.’s citywide trends of growth in public school enrollment, housing values, and school-age population at a neighborhood level to see whether there is a strong link between changes in enrollment and neighborhood changes. We look at changes in these three factors from school year 2010-11 (the year after the Great Recession ended and public school enrollment started to turn around) to 2017-18 (the most recent year of available data at the time of the analysis) to answer three questions:
