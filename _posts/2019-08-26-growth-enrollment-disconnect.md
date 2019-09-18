@@ -12,7 +12,7 @@ This is the methodology and data write up of the publication “D.C.’s Disconn
 <strong>here</strong></a>.
 
 The data can be found here:
-<a href="https://data.dcpolicycenter.org/assets/data-resources/enrollment-neighborhood-change-data.xlsx"><strong>[enrollment-neighborhood-change-data.xlsx]</strong></a>.
+<a href="https://DC-Policy-Center.github.io/assets/data-resources/enrollment-neighborhood-change-data.xlsx"><strong>[enrollment-neighborhood-change-data.xlsx]</strong></a>.
 
 
 ## Methodology
