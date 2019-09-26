@@ -10,9 +10,9 @@ permalink: /posts/level-playing-field/
 
 Access to schools that level the playing field for D.C.’s at-risk students
 
-This is the methodology and data write up of the publication “Access to schools that level the playing field for D.C.’s at-risk students” found here [link TK].
+This is the methodology and data write up of the publication “Access to schools that level the playing field for D.C.’s at-risk students” found <a href="https://www.dcpolicycenter.org/publications/access-to-schools-that-level-the-playing-field-for-at-risk-students">here</a>.
 
-The data can be found here [link TK].
+The data can be found here <a href="https://data.dcpolicycenter.org/assets/data-resources/epi/leveler-schools-data.xlsx">[leveler-school-data.xlsx]</a>.
 
 This report highlights commutes to schools that serve at-risk students best, and where students have fewer options within a reasonable commute with a focus on elementary and middle school students. Key research questions include:
 <ul>
